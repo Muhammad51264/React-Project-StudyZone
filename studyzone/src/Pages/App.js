@@ -11,6 +11,10 @@ function App() {
   return (
    
     <>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 4aa799a8942d961068ef773e718f1b7ae81c3ba2
     <BrowserRouter>
     <Routes>
       <Route path="/" Component={LandingPage}></Route>
