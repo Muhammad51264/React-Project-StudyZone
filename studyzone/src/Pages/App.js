@@ -10,7 +10,7 @@ import Card from '../Components/Card';
 function App() {
   return (
     <>
-    <Card/>
+    <Card width="330px" imgLink="Images/logo-white.png"/>
     <BrowserRouter>
     <Routes>
       {/* <Route path="/" Component={}></Route> */}
