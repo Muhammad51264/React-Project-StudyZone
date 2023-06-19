@@ -4,6 +4,7 @@
   --third-color:#9DCCFF;
   --main-font-color:#000000;
   --white-font-color:#ffffff;
+  --main-font-color:#252641;
   --second-font-color:#696984;
   --navbar-color:#F2F2F2;
 }
@@ -42,3 +43,28 @@ body {
 /* Course Details Page */
 
 /* Course Details Page */
+
+
+/* Components */
+
+/* Card */
+.card__category__info {
+  font-size: 11px;
+  color: var(--second-font-color);
+}
+
+.card__course__name{
+  color: var(--main-font-color);
+}
+.card__course__price{
+  color: var(--main-color);
+  font-size: larger;
+}
+
+.card__course__desc{
+  font-size: small;
+}
+/* Card */
+
+
+/* Components */

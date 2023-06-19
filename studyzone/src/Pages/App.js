@@ -12,7 +12,7 @@ function App() {
   return (
    
     <>
-    <Card/>
+    <Card width="330px" imgLink="Images/logo-white.png"/>
     <BrowserRouter>
     <Routes>
       <Route path="/" Component={LandingPage}></Route>
