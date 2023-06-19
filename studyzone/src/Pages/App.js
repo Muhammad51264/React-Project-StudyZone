@@ -12,7 +12,6 @@ function App() {
   return (
    
     <>
-    <Card/>
     <BrowserRouter>
     <Routes>
       <Route path="/" Component={LandingPage}></Route>

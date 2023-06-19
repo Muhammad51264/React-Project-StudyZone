@@ -1,39 +1,62 @@
 :root {
-  --main-color: #49BBBD;
-  --second-color:#DBF1F2;
-  --third-color:#9DCCFF;
-  --main-font-color:#000000;
-  --white-font-color:#ffffff;
-  --second-font-color:#696984;
-  --navbar-color:#F2F2F2;
+  --main-color: #49bbbd;
+  --second-color: #dbf1f2;
+  --third-color: #9dccff;
+  --main-font-color: #000000;
+  --white-font-color: #ffffff;
+  --second-font-color: #696984;
+  --navbar-color: #f2f2f2;
 }
-
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Login and Register pages*/
 
 /* Login and Register pages*/
 
+/* Landing Page */
+.girl_img {
+  position: absolute;
+  top: 0px;
+}
+.textBox_header_landing_page {
+  position: absolute;
+  top: 220px;
+  color: var(--white-font-color);
+}
+@media screen and (max-width:625px) {
+  .textBox_header_landing_page {
+    top: 1px;
+    text-align: center;
+  }
+  .girl_img {
+  display: none;
+  }
+}
+.btn_landing_page_Join_for_free {
+  background-color: #75cdcf;
+  color: var(--white-font-color);
+  border: none;
+  border-radius: 10px;
+}
+.title_in_bg::before {
+  color: #f48c06;
+  content: "Studying";
+  font-weight: bold;
+}
 
 /* Landing Page */
-
-/* Landing Page */
-
-
 
 /* Courses Page */
 
 /* Courses Page */
-
 
 /* Course Details Page */
 
