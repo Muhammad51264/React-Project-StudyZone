@@ -37,7 +37,16 @@ body {
 
 
 /* Course Details Page */
+.course__details__background{
+  
+}
+.course__rating{
+  background-color: var(--second-color);
+}
 
+.course__details{
+  color: var(--second-font-color);
+}
 /* Course Details Page */
 
 

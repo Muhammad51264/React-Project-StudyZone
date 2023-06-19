@@ -11,7 +11,7 @@ const Card = (props) => {
         </div>
         <div className='card__category__info d-flex justify-content-between'>
             <div className='card__category__logo d-flex gap-1 align-items-center'>
-                <img width={"15px"} src={props.categoryLogo} alt="" />
+                <img width={"15px"} src={props.categoryLogo} alt="img" />
                 <div className="card__category__name">{props.category}</div>
             </div>
             <div className="card__category__lessons d-flex gap-1 align-items-center">
@@ -34,11 +34,11 @@ const Card = (props) => {
 //Card default values
 Card.defaultProps = {
     width: '250px',
-    imgLink:"Images/logo-black.png",
+    imgLink:"../Images/logo-black.png",
     title:"Course Title",
     desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque soluta",
     price:"$32",
-    categoryLogo:"Images/design.svg",
+    categoryLogo:"../Images/design.svg",
     category:"Design",
     hours:"21 Hours",
   };
