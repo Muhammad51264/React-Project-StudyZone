@@ -32,10 +32,45 @@ body {
 
 
 /* Courses Page */
-.courses--background{
+.courses-jumbotron{
   width: 100%;
   height: 70vh;
 }
+.courses--heading{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.courses--left{
+  margin-left: 35px;
+}
+.courses--filterbtn{
+  margin-right: 35px;
+}
+
+.courses--filterbtn{
+  border: none;
+  background-color: var(--second-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.cards--container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.courses--recommended--background{
+  background-color: var(--second-color)
+}
+
+.courses--recommended{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 /* Courses Page */
 
