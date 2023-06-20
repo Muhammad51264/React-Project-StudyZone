@@ -242,7 +242,10 @@ height: 250px;
 /* Courses Page */
 
 /* Course Details Page */
-<<<<<<< HEAD
+.see__all{
+  color: var(--main-color);
+  font-weight: bold;
+}
 .recommended__course__details{
   background-color: var(--second-color);
 }
@@ -259,13 +262,10 @@ height: 50px;
   color: var(--white-font-color);
 }
 
-=======
-.course__details__background {
-}
+
 .course__rating {
   background-color: var(--second-color);
 }
->>>>>>> f261c8f1775a517303b46f7778209fbe401b1768
 .stars__bar__title{
   width: 60px;
 }
@@ -281,7 +281,7 @@ height: 50px;
 }
 .course__rating{
   background-color: var(--third-color);
-  max-height: 550px;
+  max-height: 650px;
   
 }
 
@@ -339,5 +339,43 @@ height: 50px;
   font-size: small;
 }
 /* Card */
+
+/* Card slider */
+.card__slider__recommended{
+  background-color: var(--second-color);
+  position: relative;
+}
+.next-btn{
+  border: 0;
+  position: absolute;
+  background-color: transparent;
+  top:40% ;
+  right:1%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.prev-btn{
+  border: 0;
+  position: absolute;
+  background-color: transparent;
+  top:40% ;
+  left:1%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+/* Card slider */
 
 /* Components */
