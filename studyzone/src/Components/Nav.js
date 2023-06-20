@@ -1,11 +1,20 @@
 import React from 'react'
+import { FaSistrix } from "react-icons/fa";
 
 const Nav = () => {
   return (
-    <nav style={{width: "100%" ,height: "40px",background: "#000",color: "white"}}>
-      <div className="text-center">nav</div> 
+    <nav className="navbar_">
+      <div className="navbar__logo">Logo</div>
+
+
+      <div class="navbar__search">
+  <span><FaSistrix /></span>
+  <input type="text" placeholder="Search for anythings" />
+</div>
+
+      <div className="navbar__text">Right-aligned text</div>
     </nav>
-  )
+  );
 }
 
 export default Nav
