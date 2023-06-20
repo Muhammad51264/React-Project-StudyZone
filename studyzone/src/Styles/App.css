@@ -14,6 +14,14 @@
   --main-font-color: #252641;
   --second-font-color: #696984;
   --navbar-color: #f2f2f2;
+  --main-color: #49BBBD;
+  --second-color:#DBF1F2;
+  --third-color:#b9d2ec;
+  --main-font-color:#000000;
+  --white-font-color:#ffffff;
+  --main-font-color:#252641;
+  --second-font-color:#696984;
+  --navbar-color:#F2F2F2;
 }
 
 body {
@@ -171,12 +179,38 @@ height: 250px;
 .course__rating {
   background-color: var(--second-color);
 }
+.stars__bar__title{
+  width: 60px;
+}
+.rating__bar{
+  background: #D9D9D9;
+  height: 10px;
+  width: 100%;
+}
+.rating__bar__filled{
+  width: 90%;
+  height: 10px;
+  background-color: var(--main-color);
+}
+.course__rating{
+  background-color: var(--third-color);
+  
+}
 
 /* Course Details Page */
 
 .course__details {
   color: var(--second-font-color);
 }
+
+.course__rating-stats{
+  max-height: 120px;
+  min-width: 130px;
+}
+/* @media screen and (max-width: 480px) {
+  
+} */
+
 /* Course Details Page */
 
 /* Components */
