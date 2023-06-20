@@ -11,7 +11,11 @@ const Nav = () => {
   <span><FaSistrix /></span>
   <input type="text" placeholder="Search for anythings" />
 </div>
-      <div className="navbar__text">Right-aligned text</div>
+      <div className="navbar__text">
+        <a href='#'>Category</a>
+        <a href='#'>Courses</a>
+        <a href='#'>About us</a>
+    </div>
 
     <NavButton/>
 

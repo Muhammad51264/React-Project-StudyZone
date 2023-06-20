@@ -7,14 +7,11 @@ function NavButton() {
        <button className='btnLogin'>
         Login
        </button>
-
        <button className='btnSignUp'>
        Sign up
        </button>
-
-
     </div>
-  )
-}
+        )
+      }
 
 export default NavButton
