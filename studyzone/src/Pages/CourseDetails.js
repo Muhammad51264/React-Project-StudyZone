@@ -7,6 +7,12 @@ import Rating from '@mui/material/Rating';
 import Card from '../Components/Card'
 
 const CourseDetails = () => {
+  let arr = [2,1,1,2,3,4,5,6,7,6,7,6,8,9];
+  for (let i in arr){
+    if (i[0] == i[1]){
+
+    }
+  }
   return (
     <>
     <div className='course__details__background'>
@@ -18,7 +24,7 @@ const CourseDetails = () => {
           <div className="course__rating-stats mx-auto col-3 bg-white d-flex justify-content-center flex-column gap-3 rounded-2 py-4">
             <h4 className="course__rating__number text-center">4 out of 5</h4>
 
-            <div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
+            <div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={1.5} precision={0.5} readOnly />
           </div>
           </div>
 
@@ -54,14 +60,119 @@ const CourseDetails = () => {
               </div>
               </div>
           </div>
+
+          <div className="course__comments col-12 col-md-12 col-xl-12">
+            <div className="course__comment__all d-flex gap-2 flex-column">
+            <div className="course__comment__info d-flex justify-content-between align-items-center">
+            <div className="profile__comment d-flex align-items-center gap-1">
+              <img src="..\Images\profile.png" alt="" className="profile__img rounded" style={{width:"45px"}}/>
+              <div className='user__name__comment fw-bold text-black'>User</div>            
+            </div>
+            <div className='course__user__time d-flex align-items-center gap-1'>
+            <img src="..\Images\time.svg" alt="" className="comment__time" style={{width:"20px"}}/>
+            <div className="time__value small">3 hours</div>
+            </div>
+            
+            </div>
+            <div>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</div>
+            <hr />
+            </div>
+
+            <div className="course__comment__all d-flex gap-2 flex-column">
+            <div className="course__comment__info d-flex justify-content-between align-items-center">
+            <div className="profile__comment d-flex align-items-center gap-1">
+              <img src="..\Images\profile.png" alt="" className="profile__img rounded" style={{width:"45px"}}/>
+              <div className='user__name__comment fw-bold text-black'>User</div>            
+            </div>
+            <div className='course__user__time d-flex align-items-center gap-1'>
+            <img src="..\Images\time.svg" alt="" className="comment__time" style={{width:"20px"}}/>
+            <div className="time__value small">3 hours</div>
+            </div>
+            
+            </div>
+            <div>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</div>
+            
+            </div>
+          </div>
       </div>
 
-      <div className="course__info col-4 col-sm-4 col-md-4 border order-1 order-xl-2 mb-4 mx-auto">
-      this
+      <div className="course__info col-4 col-sm-4 col-md-4 border order-1 order-xl-2 mb-4 mx-auto bg-white rounded-4 p-3 border-0 shadow" style={{marginTop:"-12%"}}>
+      <div className="course__img"><img src="..\Images\course-image.jpg" alt="img" width={"100%"}/></div>
+      <h2 className="price text-black fw-bold my-3 ms-1">$49.99</h2>
+      <button className='buy__button btn btn-info'>Buy Now</button>
+      <hr />
+      <div className="course__payment__info d-flex flex-column gap-3">
+        <h5 className='text-dark fw-bold'>This Course includes :</h5>
+        <div className="course__payment d-flex gap-2">
+          <img width={"25px"} height={"25px"} src="..\Images\icon1.svg" alt="icon" />
+          <div className="fw-bold">Money Back Guarantee</div>
+        </div>
+        <div className="course__payment d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\camera.svg" alt="icon" />
+        <div className="fw-bold">Access on all devices</div>
+      
+        </div>
+        <div className="course__payment d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\certificate.svg" alt="icon" />
+        <div className="fw-bold">Certification of completion</div>
+        </div>
+        <div className="course__payment d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\charts.svg" alt="icon" />
+        <div className="fw-bold">32 lessons</div>
 
+        </div>
+        <div className="course__payment d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\language.svg" alt="icon" />
+        <div className="fw-bold">English</div>
+
+        </div>
       </div>
+
+      <hr />
+      <div className="course__knowledge d-flex flex-column gap-2">
+        <h5 className='course__learn text-dark fw-bold'>What you'll learn :</h5>
+        <div className="course__learning__points d-flex flex-column gap-3">
+        <div className="course__learning d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
+        <div className="fw-bold">You will learn something</div>
+        </div>
+
+        <div className="course__learning d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
+        <div className="fw-bold">You will learn something</div>
+        </div>
+
+        <div className="course__learning d-flex gap-2">
+        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
+        <div className="fw-bold">You will learn something</div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+
 
     </div>
+    <div className="recommended__course__details d-flex flex-row flex-wrap justify-content-center gap-4">
+      {/* <div className="card__container d-flex gap-4 flex-wrap justify-content-center">
+
+      <Card desc="desc" width="300px"/>
+            <Card width="300px"/>
+      </div>
+
+      <div className="card__container d-flex gap-4 flex-wrap justify-content-center">
+
+      <Card desc="desc" width="300px"/>
+            <Card width="300px"/>
+      </div> */}
+
+
+
+
+
+
+        </div>
+        
     </>
   )
 }
