@@ -6,7 +6,8 @@ import Courses from "../Pages/Courses";
 import CourseDetails from "../Pages/CourseDetails";
 import Login from "../Pages/Login";
 import Register from '../Pages/Register';
-import LandingPage from './LandingPage'
+import LandingPage from './LandingPage';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 function App() {
   return (
    

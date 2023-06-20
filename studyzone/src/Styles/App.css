@@ -62,7 +62,7 @@ body {
 
 /* Landing Page */
 
-/* Courses Page */
+/*start Courses Page */
 .courses-jumbotron{
   width: 100%;
   height: 70vh;
@@ -75,11 +75,9 @@ body {
 .courses--left{
   margin-left: 35px;
 }
-.courses--filterbtn{
-  margin-right: 35px;
-}
 
 .courses--filterbtn{
+  margin-right: 35px;
   border: none;
   background-color: var(--second-color);
   border-radius: 10px;
@@ -93,17 +91,35 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .courses--recommended--background{
-  background-color: var(--second-color)
+  background-color: var(--second-color);
+  width: 100%;
 }
 
 .courses--recommended{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+.courses--recommended--heading{
   display: flex;
-  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: space-between;
+}
+.courses--recommended--heading--link{
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .cards--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+  }
 }
 
 
-/* Courses Page */
+/* en of Courses Page */
 
 /* Course Details Page */
 .course__details__background{
