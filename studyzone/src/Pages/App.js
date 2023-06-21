@@ -15,7 +15,6 @@ function App() {
     <Nav/>
     <BrowserRouter>
     <Routes>
-
       <Route path="/" Component={LandingPage}></Route>
       <Route path='/login' Component={Login}></Route>
       <Route path='/register' Component={Register}></Route>
@@ -24,6 +23,7 @@ function App() {
     </Routes>
     </BrowserRouter>
     </>
+    
   );
 }
 

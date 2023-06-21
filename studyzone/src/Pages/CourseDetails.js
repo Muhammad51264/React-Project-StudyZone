@@ -2,10 +2,8 @@ import React from 'react'
 // import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 // import Typography from '@mui/material/Typography';
-import Card from '../Components/Card'
 import CardSlider from '../Components/Card_Slider';
 const CourseDetails = () => {
-
   return (
     <>
     <div className='course__details__background'>
@@ -110,6 +108,8 @@ const CourseDetails = () => {
 
       <div className="course__info col-4 col-sm-4 col-md-4 border order-1 order-xl-2 mb-4 mx-auto bg-white rounded-4 p-3 border-0 shadow" style={{marginTop:"-12%"}}>
       <div className="course__img"><img src="..\Images\course-image.jpg" alt="img" width={"100%"}/></div>
+      <h3 className="course__name text-dark mt-1">randomName</h3>
+      <div className="course__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat adipisci qui temporibus delectus, nihil nemo dolor illo, cumque quis modi non fuga laboriosam eveniet exercitationem assumenda vitae dicta? Dolorum.</div>
       <h2 className="price text-black fw-bold my-3 ms-1">$49.99</h2>
       <button className='buy__button btn btn-info'>Buy Now</button>
       <hr />
@@ -129,7 +129,7 @@ const CourseDetails = () => {
         <div className="fw-bold">Certification of completion</div>
         </div>
         <div className="course__payment d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\charts.svg" alt="icon" />
+        <img width={"25px"} height={"25px"} src="..\Images\time_green.svg" alt="icon" />
         <div className="fw-bold">32 lessons</div>
 
         </div>
@@ -168,8 +168,9 @@ const CourseDetails = () => {
 
         <div className="m-auto card__slider__recommended pt-2">
           <div className='recommended__text d-flex justify-content-between m-auto mt-3' style={{width:"90%"}}>
-            <h5 className="recommended">Recommended Courses</h5>
-            <div className="see__all">see all</div>
+          <h4 className="p-2">
+            <b>Recommended for you</b>
+          </h4>            <div className="see__all">see all</div>
           </div>
           
           <div className='m-auto' style={{width:"90%"}}><CardSlider /></div> </div>
