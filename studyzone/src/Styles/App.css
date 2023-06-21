@@ -162,11 +162,6 @@ img.border_girl_img{
     height: 350px;
   }
 }
-#btn_landing_page_Join_for_free {
-  background-color: #75cdcf;
-  color: var(--white-font-color);
-  border: none;
-}
 #title_in_bg::before {
   color: #f48c06;
   content: "Studying ";
@@ -193,11 +188,42 @@ img.border_girl_img{
 }
 /* A Broad Selection Of Courses. */
 /* All courses */
-#btn_all_courses {
-  background-color: var(--main-color);
-  border: none;
+
+#btn_landing_page {
   margin-left: 2%;
+  border: unset;
+  border-radius: 8px;
+  color: var(--white-font-color);
+  font-weight: bold;
+  z-index: 1;
+  background: #75cdcf;
+  position: relative;
+
+ 
 }
+ 
+ #btn_landing_page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  background-color: var(--second-color);
+  z-index: -1;
+  transition: all 250ms ;
+ }
+ 
+ #btn_landing_page:hover {
+  color: var(--main-color);
+  font-weight: bold;
+
+ }
+ 
+ #btn_landing_page:hover::before {
+  width: 100%;
+ }
 .all_courses_card_landing_page {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));

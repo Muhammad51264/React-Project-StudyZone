@@ -1,4 +1,4 @@
-const CoursesInfo = [
+export const CoursesInfo = [
   {
     courses: [
       {
