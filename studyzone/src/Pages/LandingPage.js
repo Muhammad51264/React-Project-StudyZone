@@ -1,25 +1,7 @@
 import React from "react";
 import CardSlider from "../Components/Card_Slider";
-import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 function LandingPage() {
-  const topCategories = [
-    {
-      title: "Online Billing, Invoicing, & Contracts",
-      desc: "Schedule and reserve classroomof student attendance",
-    },
-    {
-      title: "Online Billing, Invoicing, & Contracts",
-      desc: "Schedule and reserve classroomof student attendance",
-    },
-    {
-      title: "Online Billing, Invoicing, & Contracts",
-      desc: "Schedule and reserve classroomof student attendance",
-    },
-    {
-      title: "Online Billing, Invoicing, & Contracts",
-      desc: "Schedule and reserve classroomof student attendance",
-    },
-  ];
   const success = [
     { num: "15K", desc: "Students" },
     { num: "75%", desc: "TotalSuccess" },
@@ -43,7 +25,7 @@ function LandingPage() {
             <p className=" brief_bg">you in more an interactive way</p>
             <button
               className="btn btn-secondary "
-              id="btn_landing_page_Join_for_free"
+              id="btn_landing_page"
               type="button"
             >
               Join for free
@@ -67,13 +49,10 @@ function LandingPage() {
       {/* All courses  */}
 
       <div className="container">
-        <button
-          className="btn btn-secondary "
-          id="btn_all_courses"
-          type="button"
-        >
-          All courses
-        </button>
+        <Link to="/courses" className="btn btn-secondary" id="btn_landing_page">
+          {" "}
+          All Courses
+        </Link>
         <CardSlider />
       </div>
 
@@ -204,7 +183,6 @@ function LandingPage() {
       </div>
 
       {/* /Our success */}
-      <Footer />
     </>
   );
 }

@@ -7,7 +7,7 @@ const Nav = () => {
       <div className="navbar__logo">
         <img src='../Images/logo-no-background.png'></img>
       </div>
-      <div class="navbar__search">
+      <div className="navbar__search">
   <span><FaSistrix /></span>
   <input type="text" placeholder="Search for anythings" />
 </div>
