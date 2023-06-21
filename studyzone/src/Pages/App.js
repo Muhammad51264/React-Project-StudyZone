@@ -1,6 +1,9 @@
+import '../Styles/Video.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../Styles/App.css';
+
+
 import { Route,Routes,BrowserRouter } from 'react-router-dom';
 import Courses from "../Pages/Courses";
 import CourseDetails from "../Pages/CourseDetails";
@@ -23,7 +26,7 @@ function App() {
     </Routes>
     </BrowserRouter>
     </>
-    
+
   );
 }
 
