@@ -3,6 +3,7 @@ import React from 'react'
 import Rating from '@mui/material/Rating';
 // import Typography from '@mui/material/Typography';
 import CardSlider from '../Components/Card_Slider';
+import CourseVideo from '../Components/CourseVideo';
 const CourseDetails = () => {
   return (
     <>
@@ -175,6 +176,8 @@ const CourseDetails = () => {
           
           <div className='m-auto' style={{width:"90%"}}><CardSlider /></div> </div>
         
+
+        <CourseVideo/>
     </>
   )
 }
