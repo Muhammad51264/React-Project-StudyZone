@@ -162,11 +162,6 @@ img.border_girl_img{
     height: 350px;
   }
 }
-#btn_landing_page_Join_for_free {
-  background-color: #75cdcf;
-  color: var(--white-font-color);
-  border: none;
-}
 #title_in_bg::before {
   color: #f48c06;
   content: "Studying ";
@@ -193,11 +188,42 @@ img.border_girl_img{
 }
 /* A Broad Selection Of Courses. */
 /* All courses */
-#btn_all_courses {
-  background-color: var(--main-color);
-  border: none;
+
+#btn_landing_page {
   margin-left: 2%;
+  border: unset;
+  border-radius: 8px;
+  color: var(--white-font-color);
+  font-weight: bold;
+  z-index: 1;
+  background: #75cdcf;
+  position: relative;
+
+ 
 }
+ 
+ #btn_landing_page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  background-color: var(--second-color);
+  z-index: -1;
+  transition: all 250ms ;
+ }
+ 
+ #btn_landing_page:hover {
+  color: var(--main-color);
+  font-weight: bold;
+
+ }
+ 
+ #btn_landing_page:hover::before {
+  width: 100%;
+ }
 .all_courses_card_landing_page {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
@@ -205,18 +231,6 @@ img.border_girl_img{
 /* /All courses */
 
 /* Top Categories  */
-
-.topCategories_section {
-  display: grid;
-  place-items: center;
-}
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-.topCategories_landing_page {
-  margin-top: 0; 
-}
 .section_heading_topCategories::before {
   content: "Top ";
   color: #2f327d;
@@ -234,10 +248,10 @@ img.border_girl_img{
   text-align: center
 }
 .card_topCategories {
-  width: 70%;
+  width: 100%;
   height: 100%;
-  padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, var(--main-color)50%);
+  padding-bottom: 2em ;
+  background: linear-gradient(#ffffff 50%, var(--main-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -249,10 +263,9 @@ img.border_girl_img{
   font-size: 20px;
   font-weight: 600;
   color: #2f327d;
-  margin: 1em 0;
 }
 .desc_of_topCategories{
-  color: #575a7b;
+  color: var(--main-font-color);
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -262,13 +275,14 @@ img.border_girl_img{
   position: relative;
   margin: auto;
   font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: #ffffff;
+  height: 2.3em;
+  width: 2.3em;
+  color: var(--white-font-color);
   border-radius: 50%;
   display: grid;
   place-items: center;
   transition: 0.5s;
+  margin-bottom: 0.5em;
 }
 .card_topCategories:hover {
   background-position: 0 100%;
@@ -283,29 +297,13 @@ img.border_girl_img{
 .card_topCategories:hover .desc_of_topCategories {
   color: #f0f0f0;
 }
-@media screen and (min-width: 768px) {
-  .topCategories_section {
-    padding: 0 2em;
-  }
-  .topCategories_col {
-    max-width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .topCategories_section {
-    padding: 1em 3em;
-  }
-  .topCategories_col {
-    flex: 0 0 20%;
-    max-width: 33.33%;
-  }
-  .card_topCategories{
-    width: 265px;
-  }
-}
 
 /* /Top Categories  */
+
 /* what is SZ */
+.sz_ctn{
+  margin-top: 3em  ;
+}
 .what_SZ{
   text-align: center;
 }
@@ -362,6 +360,7 @@ margin: 0 auto;
   -o-border-radius: 50px;
 }
 /* / what is SZ */
+
 /* our success */
 .our_success::before{
 color: #2f327d;
@@ -425,12 +424,16 @@ height: fit-content;
 }
 @media screen and (max-width: 767px) {
   .textBox_header_landing_page {
-    top: 100px;
-    text-align: center;
+  top: 15%;
   }
   .container_img-slide{
     background-size: 180px;
-
+    background-image: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height:350px;
+    
 }
 .aboutUs_img{
   width: 200px;
@@ -443,9 +446,16 @@ height: fit-content;
 .slogan_footer{
   width: fit-content;
 }
+.col_top_categories{
+  margin-bottom: 2em;
+}
 }
 
-
+@media screen and (min-width:768px) {
+  .aboutUs_img{
+    margin-bottom: 2em;
+  }
+}
 
 /* Landing Page */
 
@@ -652,5 +662,42 @@ height: 50px;
 
 
 /* Card slider */
+
+
+/* Video */
+
+/* Override the control bar color */
+
+
+
+/* Override the volume control color */
+
+
+
+.video-js .vjs-volume-level{
+  background-color: var(--main-color) !important;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-level:before {
+  background-color: var(--main-color)!important; /* Set your desired color here */
+}
+
+/* Override the progress bar color */
+.video-js .vjs-progress-holder .vjs-play-progress {
+  background-color: var(--main-color) !important; /* Set your desired color here */
+}
+
+/* Override the time tooltip background color */
+.video-js .vjs-progress-holder .vjs-time-tooltip {
+  background-color: var(--main-color) !important; /* Set your desired color here */
+}
+
+/* Override the fullscreen button color */
+.video-js .vjs-fullscreen-control:before {
+  color: var(--main-color) !important; /* Set your desired color here */
+}
+
+
+/* Video */
 
 /* Components */

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container p-4 pb-0">
           <section className="">
             <p className="d-flex justify-content-center align-items-center">
-              <img src="Images/logo-white-removebg-preview (2).png" alt="..."height={"12%"} width={"12%"} className="footer_logo"/>
+              <img src="../Images/logo-white-removebg-preview (2).png" alt="..."height={"12%"} width={"12%"} className="footer_logo"/>
               <div className="slogan_footer">
               <p>Empower Your Mind, Expand Your Horizons!</p>
               </div>

@@ -1,4 +1,4 @@
-const CoursesInfo = [
+export const CoursesInfo = [
   {
     id: "1001",
     courseName: "Web Development Bootcamp",
