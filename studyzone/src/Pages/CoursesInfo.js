@@ -12,7 +12,7 @@ const CoursesInfo = [
           "Comprehensive course on building websites and web applications using HTML, CSS, and JavaScript.",
         image:
           "https://www.rinex.ai/assets/images/Backend%20development%20Rinex%20Ai.png",
-        hours: 40,
+        hours: "40 hours",
 
         "what you will learn": [
           "HTML5 and CSS3 fundamentals",
@@ -34,7 +34,7 @@ const CoursesInfo = [
           "Learn the essential concepts and techniques of data science and machine learning using Python and popular libraries.",
         image:
           "https://bmsastech.com/wp-content/uploads/2020/05/data-science-vector-image.png",
-        hours: 60,
+        hours: "60 hours",
         "what you will learn": [
           "Data preprocessing and exploration",
           "Supervised and unsupervised learning algorithms",
@@ -54,7 +54,7 @@ const CoursesInfo = [
         description:
           "Build cross-platform mobile apps for iOS and Android using the Flutter framework and Dart programming language.",
         image: "https://crustlab.com/wp-content/uploads/2022/09/Lp_flutter.svg",
-        hours: 35,
+        hours: "35 hours",
         "what you will learn": [
           "Flutter framework and Dart language fundamentals",
           "UI design and layouts",
@@ -75,7 +75,7 @@ const CoursesInfo = [
           "An introductory course to learn Python programming from scratch and build a strong foundation.",
         image:
           "https://st.depositphotos.com/1796420/4023/v/450/depositphotos_40232747-stock-illustration-vector-icon-of-personal-computer.jpg",
-        hours: 25,
+        hours: "25  hours",
         "what you will learn": [
           "Python syntax and data types",
           "Control flow and loops",
@@ -95,7 +95,7 @@ const CoursesInfo = [
           "Learn the fundamentals of user interface (UI) and user experience (UX) design to create intuitive and visually appealing digital products.",
         image:
           "https://altitudeaccelerator.ca/wp-content/uploads/2021/11/user-experience-design-ui-ux-virtual-screen-vector-29067507-2.jpg",
-        hours: 30,
+        hours: "30  hours",
         "what you will learn": [
           "Principles of UI and UX design",
           "Wireframing and prototyping",
@@ -116,7 +116,7 @@ const CoursesInfo = [
           "Master the skills of ethical hacking and penetration testing to identify and secure vulnerabilities in computer systems and networks.",
         image:
           "https://st2.depositphotos.com/2885805/6485/v/600/depositphotos_64857691-stock-illustration-data-protection-concept.jpg",
-        hours: 50,
+        hours: "50  hours",
         "what you will learn": [
           "Information gathering and reconnaissance",
           "Network scanning and enumeration",
@@ -137,7 +137,7 @@ const CoursesInfo = [
           "Explore the fundamentals of artificial intelligence, including machine learning, neural networks, and natural language processing.",
         image:
           "https://i.pinimg.com/564x/75/15/47/75154779c924392ec7ff3ec36a3759ea.jpg",
-        hours: 30,
+        hours: "30  hours",
         "what you will learn": [
           "Machine learning algorithms and techniques",
           "Deep learning and neural networks",
@@ -158,7 +158,7 @@ const CoursesInfo = [
           "Learn effective digital marketing strategies to promote products and services, attract customers, and boost brand awareness.",
         image:
           "https://freedesignfile.com/upload/2019/03/Digital-marketing-strategy-template-vector.jpg",
-        hours: 35,
+        hours: "35  hours",
         "what you will learn": [
           "Search engine optimization (SEO)",
           "Social media marketing",
@@ -179,7 +179,7 @@ const CoursesInfo = [
           "Gain knowledge and skills in financial management, investment strategies, and understanding financial markets.",
         image:
           "https://i.pinimg.com/564x/f1/8e/b1/f18eb16b6a19aca884ea0f67e6d62080.jpg",
-        hours: 40,
+        hours: "40  hours",
         "what you will learn": [
           "Financial statements and analysis",
           "Risk management and diversification",
@@ -200,7 +200,7 @@ const CoursesInfo = [
           "Learn the essentials of photography, including camera settings, composition, lighting, and editing techniques.",
         image:
           "https://photographylife.com/wp-content/uploads/2010/03/Portrait-Studio-Headshot-Photography-Illustration.png",
-        hours: 20,
+        hours: "20  hours",
         "what you will learn": [
           "Camera settings and exposure",
           "Composition rules and techniques",
@@ -221,7 +221,7 @@ const CoursesInfo = [
           "Enhance your communication skills for professional settings, including writing emails, delivering presentations, and effective teamwork.",
         image:
           "https://i.pinimg.com/564x/bc/f3/61/bcf36161649f93f9bcc0cd0fb6effecb.jpg",
-        hours: 25,
+        hours: "25  hours",
         "what you will learn": [
           "Effective written communication",
           "Public speaking and presentation skills",
@@ -242,7 +242,7 @@ const CoursesInfo = [
           "Learn the art of music production, recording, and mixing using digital audio workstations (DAWs) and industry-standard techniques.",
         image:
           "https://www.freevector.com/uploads/vector/preview/28482/Music-Production.jpg",
-        hours: 35,
+        hours: "35  hours",
         "what you will learn": [
           "Digital audio workstations (DAWs)",
           "Music theory and composition",
@@ -263,7 +263,7 @@ const CoursesInfo = [
           "Learn the key principles and techniques of project management to effectively plan, execute, and control projects.",
         image:
           "https://media.istockphoto.com/id/1136679371/vector/project-management-vector-illustration-business-administration-manage-project-concepts-flat.jpg?s=612x612&w=0&k=20&c=VEFxk5iFBPWIoPpNg3LXzsKcdNEL1Y1KXRBNg8HEHt0=",
-        hours: 30,
+        hours: "30  hours",
         "what you will learn": [
           "Project initiation and planning",
           "Scope management and requirements gathering",
@@ -284,7 +284,7 @@ const CoursesInfo = [
           "Dive deeper into artificial neural networks and explore advanced concepts, architectures, and training algorithms.",
         image:
           "https://img.freepik.com/free-vector/artificial-neural-network-training-algorithm-processing-speech-recognition-identity-verification-information-handling-humanoid-cyborg-isolated-concept-metaphor-illustration_335657-1155.jpg?w=2000",
-        hours: 40,
+        hours: "40  hours",
         "what you will learn": [
           "Multilayer perceptrons",
           "Convolutional neural networks (CNNs)",
@@ -304,7 +304,7 @@ const CoursesInfo = [
         description:
           "Learn to build native Android apps using Java or Kotlin, and understand key concepts of mobile app development.",
         image: "https://www.deepit.com/image/android-app-vector.png",
-        hours: 35,
+        hours: "35  hours",
         "what you will learn": [
           "Java or Kotlin programming for Android",
           "User interface design and layouts",
@@ -324,7 +324,7 @@ const CoursesInfo = [
           "Learn the basics of graphic design, including typography, layout design, color theory, and creating visual assets.",
         image:
           "https://bmsastech.com/wp-content/uploads/2020/05/graphic-design-vector.png",
-        hours: 25,
+        hours: "25  hours",
         "what you will learn": [
           "Design principles and elements",
           "Typography and fonts",
@@ -345,7 +345,7 @@ const CoursesInfo = [
           "Explore the fundamentals of blockchain technology, its applications, and the decentralized ecosystem.",
         image:
           "https://static.vecteezy.com/system/resources/previews/006/911/766/original/blockchain-technology-concept-vector.jpg",
-        hours: 30,
+        hours: "30  hours",
         "what you will learn": [
           "Blockchain concepts and components",
           "Cryptocurrencies and smart contracts",
@@ -366,7 +366,7 @@ const CoursesInfo = [
           "Learn how to analyze business data, derive insights, and present them effectively using data visualization techniques.",
         image:
           "https://datasciencedojo.com/wp-content/uploads/Data-visualization-in-business-analytics--2048x1365.jpg",
-        hours: 35,
+        hours: "35  hours",
         "what you will learn": [
           "Data analysis and exploratory data visualization",
           "Descriptive and diagnostic analytics",
@@ -387,7 +387,7 @@ const CoursesInfo = [
           "Learn to create effective social media marketing campaigns and leverage social media platforms to grow your brand and engage with your audience.",
         image:
           "https://static.vecteezy.com/system/resources/previews/004/578/802/original/developing-social-media-digital-marketing-for-business-free-vector.jpg",
-        hours: 40,
+        hours: "40  hours",
         "what you will learn": [
           "Social media strategy and planning",
           "Content creation and curation",
@@ -408,7 +408,7 @@ const CoursesInfo = [
           "Get an overview of cybersecurity principles, threats, and best practices to protect digital assets and maintain data privacy.",
         image:
           "https://static.vecteezy.com/system/resources/previews/000/517/735/original/cyber-security-vector.png",
-        hours: 25,
+        hours: "25 hours",
         "what you will learn": [
           "Cybersecurity fundamentals",
           "Network security and encryption",

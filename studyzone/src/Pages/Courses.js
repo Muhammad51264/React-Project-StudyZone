@@ -10,22 +10,6 @@ const Courses = () => {
   /*
   const courses = [
     {
-      title: "Course 1",
-      desc: "Description of Course 1",
-      price: "$49",
-      categoryLogo: "Images/design.svg",
-      category: "Design",
-      hours: "30 Hours",
-    },
-    {
-      title: "Course 2",
-      desc: "Description of Course 2",
-      price: "$59",
-      categoryLogo: "Images/programming.svg",
-      category: "Programming",
-      hours: "45 Hours",
-    },
-    {
       title: "Course 3",
       desc: "Description of Course 2",
       price: "$59",
@@ -41,46 +25,7 @@ const Courses = () => {
       category: "Programming",
       hours: "45 Hours",
     },
-    {
-      title: "Course 5",
-      desc: "Description of Course 1",
-      price: "$49",
-      categoryLogo: "Images/design.svg",
-      category: "Design",
-      hours: "30 Hours",
-    },
-    {
-      title: "Course 6",
-      desc: "Description of Course 2",
-      price: "$59",
-      categoryLogo: "Images/programming.svg",
-      category: "Programming",
-      hours: "45 Hours",
-    },
-    {
-      title: "Course 7",
-      desc: "Description of Course 2",
-      price: "$59",
-      categoryLogo: "Images/programming.svg",
-      category: "Programming",
-      hours: "45 Hours",
-    },
-    {
-      title: "Course 8",
-      desc: "Description of Course 2",
-      price: "$59",
-      categoryLogo: "Images/programming.svg",
-      category: "Programming",
-      hours: "45 Hours",
-    },
-    {
-      title: "Course 9",
-      desc: "Description of Course 2",
-      price: "$59",
-      categoryLogo: "Images/programming.svg",
-      category: "Programming",
-      hours: "45 Hours",
-    },
+
   ];*/
 
   // recomended section
