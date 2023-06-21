@@ -413,6 +413,11 @@ height: fit-content;
 #subscribe_input::placeholder{
   color: var(--white-font-color);
 }
+.slogan_footer{
+  border: 2px white;
+    text-align: center;
+    width: 15%;
+}
     /* /footer */
 
 .container_img-slide div{
@@ -423,13 +428,6 @@ height: fit-content;
     top: 100px;
     text-align: center;
   }
-/* 
-.bg_landing_page{
-height: 250px;
-}
-  .girl_img {
-    display: none;
-  } */
   .container_img-slide{
     background-size: 180px;
 
@@ -437,6 +435,13 @@ height: 250px;
 .aboutUs_img{
   width: 200px;
   margin-bottom: 5%;
+}
+.footer_logo{
+  height: 35%;
+  width :35%;
+}
+.slogan_footer{
+  width: fit-content;
 }
 }
 
