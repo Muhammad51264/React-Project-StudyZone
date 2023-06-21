@@ -41,7 +41,7 @@ body {
 
 /*backgroundImage&info */
 
-.bg_landing_page {
+/* .bg_landing_page {
   position: relative;
 }
 .girl_img {
@@ -53,7 +53,7 @@ body {
 img.border_girl_img{
   border-bottom-right-radius:  10em;
 
-}
+} */
 .textBox_header_landing_page {
   position: absolute;
   top: 30%;
@@ -78,20 +78,7 @@ img.border_girl_img{
   content: "Studying ";
   font-weight: bold;
 }
-@media screen and (max-width: 767px) {
-  .textBox_header_landing_page {
-    top: 35px;
-    text-align: center;
-  }
 
-.bg_landing_page{
-height: 250px;
-}
-  .girl_img {
-    display: none;
-  }
-
-}
 /* /backgroundImage&info */
 
 /* A Broad Selection Of Courses. */
@@ -126,10 +113,247 @@ height: 250px;
 
 /* Top Categories  */
 
+.topCategories_section {
+  display: grid;
+  place-items: center;
+}
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.topCategories_landing_page {
+  margin-top: 0; 
+}
+.section_heading_topCategories::before {
+  content: "Top ";
+  color: #2f327d;
+  margin-top: 0; 
+
+}
+.section_heading_topCategories::after {
+  content: "Categories";
+  color: var(--main-color);
+  margin-top: 0; 
+
+}
+.topCategories_col {
+  padding: 3em;
+  text-align: center
+}
+.card_topCategories {
+  width: 70%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, var(--main-color)50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card_title_topCategories {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f327d;
+  margin: 1em 0;
+}
+.desc_of_topCategories{
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color:var(--main-color);
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card_topCategories:hover {
+  background-position: 0 100%;
+}
+.card_topCategories:hover .icon-wrapper {
+  background-color: #ffffff;
+  color:var(--main-color);
+}
+.card_topCategories:hover .card_title_topCategories {
+  color: #ffffff;
+}
+.card_topCategories:hover .desc_of_topCategories {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  .topCategories_section {
+    padding: 0 2em;
+  }
+  .topCategories_col {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .topCategories_section {
+    padding: 1em 3em;
+  }
+  .topCategories_col {
+    flex: 0 0 20%;
+    max-width: 33.33%;
+  }
+  .card_topCategories{
+    width: 265px;
+  }
+}
 
 /* /Top Categories  */
+/* what is SZ */
+.what_SZ{
+  text-align: center;
+}
+.What_is_StudyZone_section::before{
+  color:#2f327d;
+  content: "What is ";
+  text-align: center;
+}
+.What_is_StudyZone_section::after{
+  color:var(--main-color);
+  content: "StudyZone?";
+}
+.about_us_sz{
+display: flex;
+margin: 0 auto;
+  width:70%;
+  text-align: center;
+}
+
+.container_img-slide{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  background: var(--main-color);
+  z-index: 2;
+  position: relative;
+  margin-bottom: 0px;
+  padding: 6em 0;
+  border-radius: 0 0 10em 10em;
+  text-align: center;
+  background-image: url('../../public/Images/girl_landing_page.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 500px;
+
+  }
+.instructor_img{
+  position: relative;
+  text-align: center;
+  color: var(--white-font-color);
+}
+.instructor_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aboutUs_img{
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+/* / what is SZ */
+/* our success */
+.our_success::before{
+color: #2f327d;
+content: "Our ";
+}
+.our_success::after{
+  color:var(--main-color);
+  content: "Success";
+  }
+  .num_of_succses{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: -webkit-linear-gradient(#136CB5, #49BBBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4%;
+  }
+  .our_success_container{
+    margin-top:4% ;
+  }
+  /* /our success  */
+  /* footer */
+  .main_footer{
+background-color: var(--main-color);
+height: fit-content;
+  }
+  #btn_subscribe{
+    background-color: var(--white-font-color);
+    border: none;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+  #subscribe_input{
+    background-color: var(--main-color);
+    border: 0.5px solid var(--white-font-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+#subscribe_input::placeholder{
+  color: var(--white-font-color);
+}
+    /* /footer */
+
+.container_img-slide div{
+  width: 47%;
+}
+@media screen and (max-width: 767px) {
+  .textBox_header_landing_page {
+    top: 100px;
+    text-align: center;
+  }
+/* 
+.bg_landing_page{
+height: 250px;
+}
+  .girl_img {
+    display: none;
+  } */
+  .container_img-slide{
+    background-size: 180px;
+
+}
+.aboutUs_img{
+  width: 200px;
+  margin-bottom: 5%;
+}
+}
+
+
 
 /* Landing Page */
+
+
+
+
 
 /* Courses Page */
 .courses-jumbotron {
