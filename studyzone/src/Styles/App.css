@@ -508,6 +508,11 @@ height: fit-content;
     gap: 10px;
   }
 }
+@media only screen and (max-width: 400px) {
+ .courses--page--card{
+  width: 200px;
+ }
+  }
 
 /* Courses Page */
 
