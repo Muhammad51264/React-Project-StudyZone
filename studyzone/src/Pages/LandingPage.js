@@ -1,39 +1,23 @@
 import React from "react";
-import Card from "../Components/Card";
+import CardSlider from "../Components/Card_Slider";
 import Footer from "../Components/Footer";
 function LandingPage() {
-  const allCourses_landing_page = [
+  const topCategories = [
     {
-      id: 1,
-      title: "Introduction to Programming",
-      description:
-        "Learn the fundamentals of programming with a focus on problem-solving and logic.",
-      instructor: "John Smith",
-      duration: "6 weeks",
+      title: "Online Billing, Invoicing, & Contracts",
+      desc: "Schedule and reserve classroomof student attendance",
     },
     {
-      id: 2,
-      title: "Web Development",
-      description:
-        "Build dynamic and responsive websites using HTML, CSS, and JavaScript.",
-      instructor: "Jane Doe",
-      duration: "8 weeks",
+      title: "Online Billing, Invoicing, & Contracts",
+      desc: "Schedule and reserve classroomof student attendance",
     },
     {
-      id: 3,
-      title: "Data Science",
-      description:
-        "Explore the field of data science, including data analysis and machine learning.",
-      instructor: "Alex Johnson",
-      duration: "10 weeks",
+      title: "Online Billing, Invoicing, & Contracts",
+      desc: "Schedule and reserve classroomof student attendance",
     },
     {
-      id: 4,
-      title: "Mobile App Development",
-      description:
-        "Create mobile applications for iOS and Android using popular frameworks.",
-      instructor: "Sarah Adams",
-      duration: "12 weeks",
+      title: "Online Billing, Invoicing, & Contracts",
+      desc: "Schedule and reserve classroomof student attendance",
     },
   ];
   const success = [
@@ -68,45 +52,6 @@ function LandingPage() {
         </div>
         <div></div>
       </div>
-      {/* <div className="ctn">
-        <img
-          src="Images/header_width_bg.png"
-          className="card-img bg_landing_page "
-          alt="Stony Beach"
-        />
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className=" textBox_header_landing_page">
-                <h2 className="card-title " id="title_in_bg">
-                  Online is now
-                </h2>
-                <h2>much easier</h2>
-                <span className="card-text brief_bg">
-                  StudyZone is an interesting platform that will teach
-                </span>
-                <p className=" brief_bg">you in more an interactive way</p>
-                <button
-                  className="btn btn-secondary "
-                  id="btn_landing_page_Join_for_free"
-                  type="button"
-                >
-                  Join for free
-                </button>
-              </div>
-            </div>
-            <div className="col">
-              <div className="girl_img ">
-                <img
-                  src="Images/girl_landing_page.png"
-                  className="card-img border_girl_img"
-                  alt="Stony Beach"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       {/* /backgroundImage&info */}
       {/* A Broad Selection Of Courses. */}
       <div className="broad_selection">
@@ -129,86 +74,89 @@ function LandingPage() {
         >
           All courses
         </button>
+        <CardSlider />
       </div>
 
-      <div className="container all_courses_card_landing_page">
-        {allCourses_landing_page.map((allCourses_landing_page) => (
-          <Card
-            key={allCourses_landing_page.id}
-            title={allCourses_landing_page.title}
-            desc={allCourses_landing_page.description}
-          />
-        ))}
-      </div>
       {/* /All courses  */}
 
       {/* /Top Categories  */}
-
-      <section className="topCategories_section">
+      <div className="container text-center">
         <div className="row">
-          <h2 className="section_heading_topCategories"></h2>
-        </div>
-        <div className="row topCategories_landing_page">
-          <div className="column topCategories_col">
-            <div className="card  mx-auto card_topCategories">
-              <div className="icon-wrapper">
-                <i className="fa-solid fa-file-invoice-dollar"></i>{" "}
-              </div>
-              <h4 className="card_title_topCategories">Service Heading</h4>
-              <p className="desc_of_topCategories">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div className="column topCategories_col">
-            <div className="card  mx-auto card_topCategories">
-              <div className="icon-wrapper">
-                <i className="fa-solid fa-calendar-days"></i>{" "}
-              </div>
-              <h4 className="card_title_topCategories">Service Heading</h4>
-              <p className="desc_of_topCategories">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div className="column topCategories_col">
-            <div className="card  mx-auto card_topCategories">
-              <div className="icon-wrapper">
-                <i className="fas fa-wrench"></i>
-              </div>
-              <h4 className="card_title_topCategories">Service Heading</h4>
-              <p className="desc_of_topCategories">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div className="column topCategories_col">
+          <h2 className="section_heading_topCategories mb-5"></h2>
+
+          <div className="col col_top_categories">
             <div className="card mx-auto card_topCategories">
-              <div className="icon-wrapper">
-                <i className="fas fa-truck-pickup"></i>
+              <div className="card-body">
+                <div className="icon-wrapper">
+                  <i className="fa-solid fa-file-invoice"></i>{" "}
+                </div>
+                <h5 className="card-title card_title_topCategories">
+                  Customer Tracking & Attendence
+                </h5>
+                <p className="card-text desc_of_topCategories">
+                  Schedule and reserve classroomof student attendance.
+                </p>
               </div>
-              <h4 className="card_title_topCategories">Service Heading</h4>
-              <p className="desc_of_topCategories">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
+            </div>{" "}
+          </div>
+          <div className="col col_top_categories">
+            <div className="card mx-auto card_topCategories">
+              <div className="card-body">
+                <div className="icon-wrapper">
+                  <i className="fa-solid fa-calendar-days"></i>{" "}
+                </div>
+                <h5 className="card-title card_title_topCategories">
+                  Easy Scheduling & Attendance Tracking
+                </h5>
+                <p className="card-text desc_of_topCategories">
+                  Schedule and reserve className room of student attendance.
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+          <div className="col col_top_categories">
+            <div className="card mx-auto card_topCategories">
+              <div className="card-body">
+                <div className="icon-wrapper">
+                  <i className="fa-solid fa-people-group"></i>{" "}
+                </div>
+                <h5 className="card-title card_title_topCategories">
+                  Customer Tracking & Attendence
+                </h5>
+                <p className="card-text desc_of_topCategories">
+                  Automate and track emails to individuals or g organization and
+                  track emails .
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+          <div className="col col_top_categories">
+            <div className="card mx-auto card_topCategories">
+              <div className="card-body">
+                <div className="icon-wrapper">
+                  <i className="fa-solid fa-calendar-days"></i>
+                </div>
+                <h5 className="card-title card_title_topCategories">
+                  Easy Scheduling & Attendance Tracking
+                </h5>
+                <p className="card-text desc_of_topCategories">
+                  Schedule and reserve classroomof student attendance.
+                </p>
+              </div>
+            </div>{" "}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Top Categories  */}
       {/* what is studyZone */}
 
-      <div className="container text-center">
+      <div className="container text-center sz_ctn">
         <div className="what_SZ">
           <h2 className="What_is_StudyZone_section"></h2>
         </div>
         <div className="about_us_sz">
-          <p className="what_sz_about">
+          <p className="what_sz_about mb-4">
             SZ is a platform that allows educators to create online classes
             whereby they can store the course materials online; manage
             assignments, quizzes and exams; monitor due dates; grade results and
@@ -247,18 +195,16 @@ function LandingPage() {
         </div>
       </div>
       <div className="num_of_succses">
-        {success.map((success,id) => (
+        {success.map((success, id) => (
           <div key={id}>
- <h1 >{success.num}</h1>
-            <p>{success.desc}</p>      
-              </div>
-          
+            <h1>{success.num}</h1>
+            <p>{success.desc}</p>
+          </div>
         ))}
       </div>
 
       {/* /Our success */}
-  <Footer/>
-
+      <Footer />
     </>
   );
 }
