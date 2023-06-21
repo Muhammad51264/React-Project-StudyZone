@@ -205,18 +205,6 @@ img.border_girl_img{
 /* /All courses */
 
 /* Top Categories  */
-
-.topCategories_section {
-  display: grid;
-  place-items: center;
-}
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-.topCategories_landing_page {
-  margin-top: 0; 
-}
 .section_heading_topCategories::before {
   content: "Top ";
   color: #2f327d;
@@ -234,10 +222,10 @@ img.border_girl_img{
   text-align: center
 }
 .card_topCategories {
-  width: 70%;
+  width: 100%;
   height: 100%;
-  padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, var(--main-color)50%);
+  padding-bottom: 2em ;
+  background: linear-gradient(#ffffff 50%, var(--main-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -249,10 +237,9 @@ img.border_girl_img{
   font-size: 20px;
   font-weight: 600;
   color: #2f327d;
-  margin: 1em 0;
 }
 .desc_of_topCategories{
-  color: #575a7b;
+  color: var(--main-font-color);
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -262,13 +249,14 @@ img.border_girl_img{
   position: relative;
   margin: auto;
   font-size: 30px;
-  height: 2.5em;
-  width: 2.5em;
-  color: #ffffff;
+  height: 2.3em;
+  width: 2.3em;
+  color: var(--white-font-color);
   border-radius: 50%;
   display: grid;
   place-items: center;
   transition: 0.5s;
+  margin-bottom: 0.5em;
 }
 .card_topCategories:hover {
   background-position: 0 100%;
@@ -283,29 +271,13 @@ img.border_girl_img{
 .card_topCategories:hover .desc_of_topCategories {
   color: #f0f0f0;
 }
-@media screen and (min-width: 768px) {
-  .topCategories_section {
-    padding: 0 2em;
-  }
-  .topCategories_col {
-    max-width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .topCategories_section {
-    padding: 1em 3em;
-  }
-  .topCategories_col {
-    flex: 0 0 20%;
-    max-width: 33.33%;
-  }
-  .card_topCategories{
-    width: 265px;
-  }
-}
 
 /* /Top Categories  */
+
 /* what is SZ */
+.sz_ctn{
+  margin-top: 3em  ;
+}
 .what_SZ{
   text-align: center;
 }
@@ -362,6 +334,7 @@ margin: 0 auto;
   -o-border-radius: 50px;
 }
 /* / what is SZ */
+
 /* our success */
 .our_success::before{
 color: #2f327d;
@@ -425,12 +398,16 @@ height: fit-content;
 }
 @media screen and (max-width: 767px) {
   .textBox_header_landing_page {
-    top: 100px;
-    text-align: center;
+  top: 15%;
   }
   .container_img-slide{
     background-size: 180px;
-
+    background-image: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height:350px;
+    
 }
 .aboutUs_img{
   width: 200px;
@@ -443,9 +420,16 @@ height: fit-content;
 .slogan_footer{
   width: fit-content;
 }
+.col_top_categories{
+  margin-bottom: 2em;
+}
 }
 
-
+@media screen and (min-width:768px) {
+  .aboutUs_img{
+    margin-bottom: 2em;
+  }
+}
 
 /* Landing Page */
 
