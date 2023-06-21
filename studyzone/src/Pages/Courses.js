@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Components/Card";
 import { Link } from "react-router-dom";
+import CardSlider from '../Components/Card_Slider';
 
 import { useState } from "react";
 
@@ -171,18 +172,9 @@ const Courses = () => {
           </Link>
         </div>
         <div className="container courses--recommended">
-          {recommendedCourses.map((course, index) => (
-            <Card
-              key={index}
-              width="300px"
-              title={course.title}
-              desc={course.desc}
-              price={course.price}
-              categoryLogo={course.categoryLogo}
-              category={course.category}
-              hours={course.hours}
-            />
-          ))}
+         
+         <CardSlider />
+       
         </div>
       </div>
     </>
