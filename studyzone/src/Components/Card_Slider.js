@@ -65,7 +65,6 @@ const CardSlider = () => {
       infinite={true}
       items={items}
       responsive={responsive}
-      buttonsDisabled={true} // Enable navigation buttons
       renderNextButton={nextButton}
       renderPrevButton={prevButton}
     />

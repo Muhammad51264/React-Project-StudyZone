@@ -15,7 +15,7 @@ const Card = (props) => {
                 <div className="card__category__name">{props.category}</div>
             </div>
             <div className="card__category__lessons d-flex gap-1 align-items-center">
-            <img  width={"15px"} src="Images\time.svg" alt="" />
+            <img  width={"15px"} src="../Images/time.svg" alt="" />
                 <div className="card__category__time">{props.hours}</div>
             </div>
         </div>
