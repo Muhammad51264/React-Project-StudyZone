@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
-
 const Courses = () => {
   const courses = [
     {
@@ -80,39 +79,28 @@ const Courses = () => {
       hours: "45 Hours",
     },
   ];
+
+  // recomended section
   const recommendedCourses = courses.slice(0, 4);
 
   const [filters, setFilters] = useState("");
-
-
+// filter function to filter the courses according to hours
   const filter1 = () => {
     setFilters("45 Hours");
   };
 
- 
   const filteredCourses = courses.filter((course) => {
     return course.hours === filters;
   });
 
-
-    
-    const filter2 = () => {
-      setFilters("30 Hours");
-    };
-  
-    
-    const filteredCourses2 = courses.filter((course) => {
-      return course.hours === filters;
-    });
-
+  const filter2 = () => {
+    setFilters("30 Hours");
+  };
 
   return (
     <>
-      <img
-        className="courses-jumbotron"
-        src="Images/search-courses.jpg"
-        alt=""
-      />
+      <div className="test"></div>
+      <img className="courses-jumbotron" src="Images/jumbotron.jpg" alt="" />
 
       <div className="container my-5">
         <div className="courses--heading">
@@ -124,7 +112,7 @@ const Courses = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i class="bi bi-sliders"></i> Filter
+              <i class="bi bi-sliders"></i>
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
               <li>
@@ -172,32 +160,31 @@ const Courses = () => {
                 />
               ))}
         </div>
+      </div>
+      <div className="courses--recommended--background">
+        <div className="container courses--recommended--heading">
+          <h4 className="p-2">
+            <b>Recommended for you</b>
+          </h4>
+          <Link className="p-2 courses--recommended--heading--link" to="#">
+            See all..
+          </Link>
         </div>
-        <div className="courses--recommended--background">
-          <div className="container courses--recommended--heading">
-            <h4 className="p-2">
-              <b>Recommended for you</b>
-            </h4>
-            <Link className="p-2 courses--recommended--heading--link" to="#">
-              See all..
-            </Link>
-          </div>
-          <div className="container courses--recommended">
-            {recommendedCourses.map((course, index) => (
-              <Card
-                key={index}
-                width="300px"
-                title={course.title}
-                desc={course.desc}
-                price={course.price}
-                categoryLogo={course.categoryLogo}
-                category={course.category}
-                hours={course.hours}
-              />
-            ))}
-          </div>
+        <div className="container courses--recommended">
+          {recommendedCourses.map((course, index) => (
+            <Card
+              key={index}
+              width="300px"
+              title={course.title}
+              desc={course.desc}
+              price={course.price}
+              categoryLogo={course.categoryLogo}
+              category={course.category}
+              hours={course.hours}
+            />
+          ))}
         </div>
-      
+      </div>
     </>
   );
 };

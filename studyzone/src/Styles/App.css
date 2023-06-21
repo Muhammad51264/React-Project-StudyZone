@@ -14,14 +14,14 @@
   --main-font-color: #252641;
   --second-font-color: #696984;
   --navbar-color: #f2f2f2;
-  --main-color: #49BBBD;
-  --second-color:#DBF1F2;
-  --third-color:#b9d2ec;
-  --main-font-color:#000000;
-  --white-font-color:#ffffff;
-  --main-font-color:#252641;
-  --second-font-color:#696984;
-  --navbar-color:#F2F2F2;
+  --main-color: #49bbbd;
+  --second-color: #dbf1f2;
+  --third-color: #b9d2ec;
+  --main-font-color: #000000;
+  --white-font-color: #ffffff;
+  --main-font-color: #252641;
+  --second-font-color: #696984;
+  --navbar-color: #f2f2f2;
 }
 
 body {
@@ -47,12 +47,10 @@ body {
 .girl_img {
   position: absolute;
   top: -18px;
-  right:10% ;
-  
+  right: 10%;
 }
-img.border_girl_img{
-  border-bottom-right-radius:  10em;
-
+img.border_girl_img {
+  border-bottom-right-radius: 10em;
 }
 .textBox_header_landing_page {
   position: absolute;
@@ -60,13 +58,13 @@ img.border_girl_img{
   color: var(--white-font-color);
 }
 
-@media screen and (max-width:1373px){
+@media screen and (max-width: 1373px) {
   .girl_img {
-    width:240px;
+    width: 240px;
   }
-  .bg_landing_page{
+  .bg_landing_page {
     height: 350px;
-    }
+  }
 }
 #btn_landing_page_Join_for_free {
   background-color: #75cdcf;
@@ -84,13 +82,12 @@ img.border_girl_img{
     text-align: center;
   }
 
-.bg_landing_page{
-height: 250px;
-}
+  .bg_landing_page {
+    height: 250px;
+  }
   .girl_img {
     display: none;
   }
-
 }
 /* /backgroundImage&info */
 
@@ -112,20 +109,18 @@ height: 250px;
 }
 /* A Broad Selection Of Courses. */
 /* All courses */
-#btn_all_courses{
+#btn_all_courses {
   background-color: var(--main-color);
   border: none;
   margin-left: 2%;
 }
-.all_courses_card_landing_page{
+.all_courses_card_landing_page {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px, 2fr));
-
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
 /* /All courses */
 
 /* Top Categories  */
-
 
 /* /Top Categories  */
 
@@ -166,18 +161,21 @@ height: 250px;
 }
 
 .courses--recommended {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.courses--recommended--heading {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
-.courses--recommended--heading--link{
+.courses--recommended--heading--link {
   color: var(--main-color);
   text-decoration: none;
   font-weight: bolder;
   margin-top: 10px;
 }
 @media only screen and (max-width: 1200px) {
-  .cards--container{
+  .cards--container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 10px;
@@ -192,22 +190,21 @@ height: 250px;
 .course__rating {
   background-color: var(--second-color);
 }
-.stars__bar__title{
+.stars__bar__title {
   width: 60px;
 }
-.rating__bar{
-  background: #D9D9D9;
+.rating__bar {
+  background: #d9d9d9;
   height: 10px;
   width: 100%;
 }
-.rating__bar__filled{
+.rating__bar__filled {
   width: 90%;
   height: 10px;
   background-color: var(--main-color);
 }
-.course__rating{
+.course__rating {
   background-color: var(--third-color);
-  
 }
 
 /* Course Details Page */
@@ -216,7 +213,7 @@ height: 250px;
   color: var(--second-font-color);
 }
 
-.course__rating-stats{
+.course__rating-stats {
   max-height: 120px;
   min-width: 130px;
 }

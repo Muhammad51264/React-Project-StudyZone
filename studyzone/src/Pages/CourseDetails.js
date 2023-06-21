@@ -1,12 +1,11 @@
 import React from 'react'
 
-<<<<<<< HEAD
-=======
+
 // import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 // import Typography from '@mui/material/Typography';
 import Card from '../Components/Card'
->>>>>>> c7dc42cb6eb1426b05eb3c2c286e14c0ee6a8f75
+
 const CourseDetails = () => {
   return (
     <>
