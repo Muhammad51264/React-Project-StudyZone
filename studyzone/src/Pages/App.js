@@ -1,4 +1,3 @@
-import '../Styles/Video.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../Styles/App.css';
@@ -12,6 +11,7 @@ import Register from '../Pages/Register';
 import LandingPage from './LandingPage';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Nav from '../Components/Nav';
+import Footer from '../Components/Footer';
 function App() {
   return (
     <>
@@ -25,8 +25,9 @@ function App() {
       <Route path='/courses/courseId' Component={CourseDetails}></Route>
     </Routes>
     </BrowserRouter>
+    <Footer />
     </>
-
+  
   );
 }
 

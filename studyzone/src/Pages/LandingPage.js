@@ -204,7 +204,7 @@ function LandingPage() {
       </div>
 
       {/* /Our success */}
-      <Footer />
+      
     </>
   );
 }

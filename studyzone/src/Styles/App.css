@@ -635,7 +635,36 @@ height: 50px;
 
 /* Video */
 
+/* Override the control bar color */
 
+
+
+/* Override the volume control color */
+
+
+
+.video-js .vjs-volume-level{
+  background-color: var(--main-color) !important;
+}
+
+.video-js .vjs-volume-panel .vjs-volume-level:before {
+  background-color: var(--main-color)!important; /* Set your desired color here */
+}
+
+/* Override the progress bar color */
+.video-js .vjs-progress-holder .vjs-play-progress {
+  background-color: var(--main-color) !important; /* Set your desired color here */
+}
+
+/* Override the time tooltip background color */
+.video-js .vjs-progress-holder .vjs-time-tooltip {
+  background-color: var(--main-color) !important; /* Set your desired color here */
+}
+
+/* Override the fullscreen button color */
+.video-js .vjs-fullscreen-control:before {
+  color: var(--main-color) !important; /* Set your desired color here */
+}
 
 
 /* Video */
