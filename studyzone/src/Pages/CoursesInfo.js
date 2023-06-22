@@ -2,7 +2,7 @@ export const CoursesInfo = [
   {
     id: "1001",
     courseName: "Web Development Bootcamp",
-    price: "99.99 $",
+    price: 99.99,
     category: "programming",
     categoryLogo: "../Images/programming.svg",
     ratings: 4.8,
@@ -23,7 +23,7 @@ export const CoursesInfo = [
   {
     id: "1002",
     courseName: "Data Science and Machine Learning",
-    price: "129.99 $",
+    price: 129.99,
     category: "programming",
     categoryLogo: "../Images/programming.svg",
     ratings: 4.6,
@@ -44,7 +44,7 @@ export const CoursesInfo = [
   {
     id: "1003",
     courseName: "Mobile App Development with Flutter",
-    price: "89.99 $",
+    price: 89.99,
     category: "programming",
     categoryLogo: "../Images/programming.svg",
     ratings: 4.7,
@@ -64,7 +64,7 @@ export const CoursesInfo = [
   {
     id: "1004",
     courseName: "Python for Beginners",
-    price: "59.99 $",
+    price: 59.99,
     category: "programming",
     categoryLogo: "../Images/programming.svg",
     ratings: 4.5,
@@ -85,7 +85,7 @@ export const CoursesInfo = [
       {
         id: "1005",
         courseName: "UI/UX Design Fundamentals",
-        price: "79.99 $",
+        price: 79.99,
         category: "Design",
         ratings: 4.4,
         description:
@@ -105,7 +105,7 @@ export const CoursesInfo = [
       {
         id: "1006",
         courseName: "Ethical Hacking and Penetration Testing",
-        price: "149.99 $",
+        price: 149.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.9,
@@ -126,7 +126,7 @@ export const CoursesInfo = [
       {
         id: "1007",
         courseName: "Introduction to Artificial Intelligence",
-        price: "69.99 $",
+        price: 69.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.6,
@@ -147,7 +147,7 @@ export const CoursesInfo = [
       {
         id: "1008",
         courseName: "Digital Marketing Strategies",
-        price: "79.99 $",
+        price: 79.99,
         category: "Marketing",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.3,
@@ -168,7 +168,7 @@ export const CoursesInfo = [
       {
         id: "1009",
         courseName: "Financial Management and Investment",
-        price: "89.99 $",
+        price: 89.99,
         category: "Marketing",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.5,
@@ -189,7 +189,7 @@ export const CoursesInfo = [
       {
         id: "1010",
         courseName: "Photography Basics and Techniques",
-        price: "49.99 $",
+        price: 49.99,
         category: "Design",
 
         ratings: 4.7,
@@ -210,7 +210,7 @@ export const CoursesInfo = [
       {
         id: "1011",
         courseName: "Business Communication Skills",
-        price: "59.99 $",
+        price: 59.99,
         category: "Marketing",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.4,
@@ -231,7 +231,7 @@ export const CoursesInfo = [
       {
         id: "1012",
         courseName: "Music Production and Mixing",
-        price: "89.99 $",
+        price: 89.99,
         category: "programming",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.6,
@@ -252,7 +252,7 @@ export const CoursesInfo = [
       {
         id: "1013",
         courseName: "Project Management Fundamentals",
-        price: "69.99 $",
+        price: 69.99,
         category: "Marketing",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.5,
@@ -273,7 +273,7 @@ export const CoursesInfo = [
       {
         id: "1014",
         courseName: "Artificial Neural Networks",
-        price: "79.99 $",
+        price: 79.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.7,
@@ -294,7 +294,7 @@ export const CoursesInfo = [
       {
         id: "1015",
         courseName: "Android App Development",
-        price: "89.99 $",
+        price: 89.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.6,
@@ -314,7 +314,7 @@ export const CoursesInfo = [
       {
         id: "1016",
         courseName: "Graphic Design for Beginners",
-        price: "59.99 $",
+        price: 59.99,
         category: "Design",
         ratings: 4.4,
         description:
@@ -334,7 +334,7 @@ export const CoursesInfo = [
       {
         id: "1017",
         courseName: "Introduction to Blockchain Technology",
-        price: "69.99 $",
+        price: 69.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.5,
@@ -355,7 +355,7 @@ export const CoursesInfo = [
       {
         id: "1018",
         courseName: "Business Analytics and Data Visualization",
-        price: "79.99 $",
+        price: 79.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.3,
@@ -376,7 +376,7 @@ export const CoursesInfo = [
       {
         id: "1019",
         courseName: "Social Media Marketing",
-        price: "89.99 $",
+        price: 89.99,
         category: "Marketing",
         categoryLogo: "../Images/marketing.svg",
         ratings: 4.5,
@@ -397,7 +397,7 @@ export const CoursesInfo = [
       {
         id: "1020",
         courseName: "Introduction to Cybersecurity",
-        price: "59.99 $",
+        price: 59.99,
         category: "programming",
         categoryLogo: "../Images/programming.svg",
         ratings: 4.4,

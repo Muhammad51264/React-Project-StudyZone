@@ -20,7 +20,7 @@ const Card = (props) => {
         </div>
         <h5 className='card__course__name text-center mt-2'>{props.title}</h5>
         <div className="card__course__desc text-center my-3">{props.desc}</div>
-        <div className="card__course__price align-self-end fw-bold position-absolute" style={{bottom:"10px"}}>{props.price}</div>
+        <div className="card__course__price align-self-end fw-bold position-absolute" style={{bottom:"10px"}}>${props.price}</div>
     </div>
   );
 };
@@ -30,7 +30,7 @@ Card.defaultProps = {
   imgLink: "../Images/logo-black.png",
   title: "Course Title",
   desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque soluta",
-  price: "$32",
+  price: "32",
   categoryLogo: "../Images/design.svg",
   category: "Design",
   hours: "21 Hours",
