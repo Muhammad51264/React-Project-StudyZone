@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { QuizData } from "../Pages/QuizQuestions";
 import QuizResults from "./QuizResults";
 
-const Quiz = () => {
+const Quiz = ({display}) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [clickedOption, setClickedOption] = useState(0);
@@ -32,7 +32,7 @@ const Quiz = () => {
   };
 
   return (
-    <>
+    <div className={display}>
       {showResult ? (
         <QuizResults
           score={score}
@@ -70,7 +70,7 @@ const Quiz = () => {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
