@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import CardSlider from '../Components/Card_Slider';
 import CoursesInfo from "./CoursesInfo";
 
+
+// test
+import Quiz from "../Components/Quiz";
 const Courses = () => {
   const [filters, setFilters] = useState("");
   const [sortOrder, setSortOrder] = useState("desc");
