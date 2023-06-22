@@ -570,7 +570,10 @@ img.border_girl_img{
   background-color: var(--third-color);
   max-height: 650px;
 }
-
+.course__rating_after{
+  background-color: var(--third-color);
+ 
+}
 .lesson {
   background-color: #fbffff;
   border: 1px solid var(--main-color);

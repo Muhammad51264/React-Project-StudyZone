@@ -1,7 +1,7 @@
 import React from 'react'
 import Rating from '@mui/material/Rating';
 
-const CourseBeforePayment = () => {
+const CourseBeforePayment = ({course}) => {
   return (
 <>
 <div className='course__details__background'>
@@ -11,9 +11,9 @@ const CourseBeforePayment = () => {
     <div className="course__details container row m-auto my-4 ">
       <div className="course__rating rounded p-3 col-12 col-md-12 col-xl-7 mx-auto row gap-5 order-2 order-xl-1">
           <div className="course__rating-stats mx-auto col-3 bg-white d-flex justify-content-center flex-column gap-3 rounded-2 py-4">
-            <h4 className="course__rating__number text-center">4 out of 5</h4>
+            <h4 className="course__rating__number text-center">{course.ratings} out of 5</h4>
 
-            <div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={1.5} precision={0.5} readOnly />
+            <div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={course.ratings} precision={0.5} readOnly />
           </div>
           </div>
 
@@ -105,10 +105,10 @@ const CourseBeforePayment = () => {
 
 
       <div className="course__info col-4 col-sm-4 col-md-4 border order-1 order-xl-2 mb-4 mx-auto bg-white rounded-4 p-3 border-0 shadow" style={{marginTop:"-12%"}}>
-      <div className="course__img"><img src="..\Images\course-image.jpg" alt="img" width={"100%"}/></div>
-      <h3 className="course__name text-dark mt-1">randomName</h3>
-      <div className="course__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat adipisci qui temporibus delectus, nihil nemo dolor illo, cumque quis modi non fuga laboriosam eveniet exercitationem assumenda vitae dicta? Dolorum.</div>
-      <h2 className="price text-black fw-bold my-3 ms-1">$49.99</h2>
+      <div className="course__img"><img src={course.image} alt="img" width={"100%"} height={"300px"}/></div>
+      <h3 className="course__name text-dark mt-1">{course.courseName}</h3>
+      <div className="course__desc">{course.description}</div>
+      <h2 className="price text-black fw-bold my-3 ms-1">${course.price}</h2>
       <button className='buy__button btn btn-info' onClick={()=>{localStorage.setItem("coursePayed",true)
      window.location.reload();}}>Buy Now</button>
       <hr />
@@ -129,12 +129,12 @@ const CourseBeforePayment = () => {
         </div>
         <div className="course__payment d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\time_green.svg" alt="icon" />
-        <div className="fw-bold">32 lessons</div>
+        <div className="fw-bold">{course.hours}</div>
 
         </div>
         <div className="course__payment d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\language.svg" alt="icon" />
-        <div className="fw-bold">English</div>
+        <div className="fw-bold">{course.language}</div>
 
         </div>
       </div>
@@ -145,17 +145,17 @@ const CourseBeforePayment = () => {
         <div className="course__learning__points d-flex flex-column gap-3">
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
+        <div className="fw-bold">{course.whatYouWillLearn[0]}</div>
         </div>
 
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
+        <div className="fw-bold">{course.whatYouWillLearn[1]}</div>
         </div>
 
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
+        <div className="fw-bold">{course.whatYouWillLearn[2]}</div>
         </div>
         </div>
       </div>

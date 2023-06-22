@@ -2,18 +2,20 @@ import React from 'react'
 import CourseVideo from './CourseVideo'
 import Rating from '@mui/material/Rating';
 
-const CourseAfterPayment = () => {
+const CourseAfterPayment = ({course}) => {
   return (
     <>
       <CourseVideo/>
-      <div className="course__rating rounded container p-3 col-12 col-md-12 col-xl-12 mx-auto row gap-5 order-2 order-xl-1 my-3">
+      <div className="course__rating_after rounded container p-3 col-12 col-md-12 col-xl-12 mx-auto row gap-5 order-2 order-xl-1 my-3">
+
+      <h5 className='text-center'>{course.courseName}</h5>
           <div className="course__rating-stats mx-auto col-3 bg-white d-flex justify-content-center flex-column gap-3 rounded-2 py-4">
-            <h4 className="course__rating__number text-center">4 out of 5</h4>
+          <h4 className="course__rating__number text-center">{course.ratings} out of 5</h4>
 
-            <div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={1.5} precision={0.5} readOnly />
+<div className="course__rating__stars text-center"><Rating size="small" name="half-rating-read" defaultValue={course.ratings} precision={0.5} readOnly />
+</div>
+            
           </div>
-          </div>
-
           <div className="course__all__ratings col-12 col-md-12 col-xl-7">
             <div className="course__star d-flex gap-4 mb-2">
               <div className='stars__bar__title small'>5 Stars</div> 

@@ -8,6 +8,7 @@ const handleDragStart = (e) => e.preventDefault();
 let list= CoursesInfo.slice(0,8).map((course) => (
   <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
          <Card
+    id={course.id}
     key={course.id}
     width="300px"
     imgLink={course.image}

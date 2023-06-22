@@ -83,6 +83,7 @@ const Courses = () => {
           {filters
             ? filteredCourses.map((course) => (
                 <Card
+                  id={course.id}
                   key={course.id}
                   width="350px"
                   imgLink={course.image}
@@ -96,6 +97,7 @@ const Courses = () => {
               ))
             : sortedCourses.map((course) => (
                 <Card
+                  id={course.id}
                   key={course.id}
                   width="350px"
                   imgLink={course.image}
