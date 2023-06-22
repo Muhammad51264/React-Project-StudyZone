@@ -30,13 +30,13 @@ const CourseDetails = () => {
               <div className="course__star d-flex gap-4 mb-2">
               <div className='stars__bar__title small'>4 Stars</div> 
               <div className="rating__bar my-auto">
-                <div className="rating__bar__filled my-auto w-50"></div>
+                <div className="rating__bar__filled my-auto w-75"></div>
               </div>
               </div>
               <div className="course__star d-flex gap-4 mb-2">
               <div className='stars__bar__title small'>3 Stars</div> 
               <div className="rating__bar my-auto">
-                <div className="rating__bar__filled my-auto w-75"></div>
+                <div className="rating__bar__filled my-auto w-25"></div>
               </div>
               </div>
               <div className="course__star d-flex gap-4 mb-2">
