@@ -2,8 +2,27 @@ import Card from './Card';
 import React from 'react';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel';
-
+import CoursesInfo from '../Pages/CoursesInfo';
 const handleDragStart = (e) => e.preventDefault();
+
+let list= CoursesInfo.slice(0,8).map((course) => (
+  <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
+         <Card
+    key={course.id}
+    width="300px"
+    imgLink={course.image}
+    title={course.courseName}
+    desc={course.description}
+    price={course.price}
+    categoryLogo={course.categoryLogo}
+    category={course.category}
+    hours={course.hours}
+  />
+    </div>
+
+    ))
+
+    console.log(list)
 
 const CardSlider = () => {
   const responsive = {
@@ -13,31 +32,7 @@ const CardSlider = () => {
     1200: { items: 4 }
   };
 
-  const items = [
-    <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-      <Card width="300px" />
-    </div>,
-    <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-      <Card width="300px" />
-    </div>,
-    <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-      <Card width="300px" />
-    </div>,
-    <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-      <Card width="300px" />
-    </div>,
-        <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-        <Card width="300px" />
-      </div>
-      ,
-      <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-      <Card width="300px" />
-    </div>
-    ,
-    <div className='m-auto w-100 d-flex justify-content-center' onDragStart={handleDragStart}>
-    <Card width="300px" />
-  </div>
-  ];
+  const items = list
 
 
   const nextButton = ({ isDisabled }) => (

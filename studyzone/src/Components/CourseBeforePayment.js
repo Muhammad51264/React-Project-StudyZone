@@ -1,16 +1,10 @@
 import React from 'react'
-import CardSlider from '../Components/Card_Slider';
-import CourseBeforePayment from '../Components/CourseBeforePayment';
-import CourseAfterPayment from '../Components/CourseAfterPayment';
-const CourseDetails = () => {
-  console.log(localStorage.getItem("coursePayed"));
-  if (localStorage.getItem("coursePayed") === null) {
-    localStorage.setItem("coursePayed", "false");
-  }
-  
+import Rating from '@mui/material/Rating';
+
+const CourseBeforePayment = () => {
   return (
-    <>
-    {/* <div className='course__details__background'>
+<>
+<div className='course__details__background'>
       <img className='w-100' src="..\Images\background.jpg" alt="img" />
     </div>
 
@@ -115,7 +109,8 @@ const CourseDetails = () => {
       <h3 className="course__name text-dark mt-1">randomName</h3>
       <div className="course__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat adipisci qui temporibus delectus, nihil nemo dolor illo, cumque quis modi non fuga laboriosam eveniet exercitationem assumenda vitae dicta? Dolorum.</div>
       <h2 className="price text-black fw-bold my-3 ms-1">$49.99</h2>
-      <button className='buy__button btn btn-info' onClick={()=>{localStorage.setItem("coursePayed",true)}}>Buy Now</button>
+      <button className='buy__button btn btn-info' onClick={()=>{localStorage.setItem("coursePayed",true)
+     window.location.reload();}}>Buy Now</button>
       <hr />
       <div className="course__payment__info d-flex flex-column gap-3">
         <h5 className='text-dark fw-bold'>This Course includes :</h5>
@@ -168,24 +163,9 @@ const CourseDetails = () => {
 
 
 
-    </div> */}
-    {localStorage.getItem("coursePayed") === 'true'&& <CourseAfterPayment/>}
-    {localStorage.getItem("coursePayed") === 'false'&& <CourseBeforePayment/>}
-
-        <div className="m-auto card__slider__recommended pt-2">
-          <div className='recommended__text d-flex justify-content-between m-auto mt-3' style={{width:"90%"}}>
-          <h4 className="p-2">
-            <b>Recommended for you</b>
-          </h4>            <div className="see__all">see all</div>
-          </div>
-          
-          <div className='m-auto' style={{width:"90%"}}><CardSlider /></div> </div>
-        
-
-        {/* <CourseVideo/> */}
-    </>
+    </div>
+</>
   )
 }
 
-
-export default CourseDetails
+export default CourseBeforePayment

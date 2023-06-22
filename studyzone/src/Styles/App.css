@@ -557,7 +557,9 @@ height: 50px;
   color: var(--white-font-color);
 }
 
-
+.course__courses__tests{
+  border: 1px solid var(--main-color);
+}
 .course__rating {
   background-color: var(--second-color);
 }

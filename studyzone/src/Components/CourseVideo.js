@@ -1,50 +1,32 @@
 import 'video.js/dist/video-js.css'; 
 import 'video.js/dist/video.js';
 import '../Styles/App.css'; 
-import { useState } from 'react';
+import Video from './Video';
+import { useState,useRef } from 'react';
+import Quiz from './Quiz';
+
+
 const CourseVideo = () => {
-const Quiz =()=>{
-  return(
-    <div>car</div>
-  )
-}
-
-const Video=()=>{
-  return(<video
-    id="my_video_1"
-    className="video-js vjs-default-skin"
-    controls
-    height="500px"
-    preload="none"
-    poster="../Images/instructorr.jpg"
-    data-setup='{ "aspectRatio":"640:400", "playbackRates": [1, 1.5, 2] }'
-  >
-    <source src="../Images/React_in_100 Seconds.mp4" type="video/mp4" />
-    <source src="../Images/React_in_100 Seconds.mp4.webm" type="video/webm" />
-  </video>)
-}
-
-
-let [output,setOutput]=useState("video")
-const quizClick = () => {
-  // Update the state with the desired component for the quiz
-  setOutput("quiz");
-};
-
-
+  let [display,setDisplay]=useState("")
+  let [quizDisplay,setQuizDisplay] = useState("d-none")
+  let videoRef = useRef(null);
   return (
-    <div className='course__courses__tests container row p-4 border m-auto'>
+    <div className='course__courses__tests container row p-4 m-auto rounded my-3'>
       <div className="video__container col-12 col-xl-8" id='output-container'>
-      {output === 'video' ? <Video /> : <Quiz />}
+        
+      <Video display={display} videoRef={videoRef}/>
+      <Quiz display={quizDisplay}/>
       </div>
       
       <div className="lessons__container col-12 col-xl-4 d-flex justify-content-start flex-column gap-3" style={{overflow:"auto" ,height:"550px"}}>
       <h4>Course content</h4>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
-          <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
+          <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book" />
 <b>Lesson 1 : </b>Introduction to React.</div>
         </div>
         <div className="course__time my-auto">30 min</div>
@@ -52,7 +34,9 @@ const quizClick = () => {
       </div>
 
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -63,7 +47,9 @@ const quizClick = () => {
       </div>
 
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -73,7 +59,9 @@ const quizClick = () => {
 
       </div>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -83,7 +71,9 @@ const quizClick = () => {
 
       </div>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -93,7 +83,9 @@ const quizClick = () => {
 
       </div>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -103,7 +95,9 @@ const quizClick = () => {
 
       </div>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -113,7 +107,9 @@ const quizClick = () => {
 
       </div>
 
-      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3">
+      <div className="lesson rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        setDisplay("")
+      setQuizDisplay("d-none")}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title"><img src="../Images/book.svg" className='mx-2 mb-1' width={"20px"} height={"20px"} alt="book"/>
@@ -122,7 +118,14 @@ const quizClick = () => {
         <div className="course__time my-auto">30 min</div>
 
       </div>
-      <div className="lesson Quiz rounded d-flex justify-content-around flex-wrap p-3" onClick={quizClick}>
+      <div className="lesson Quiz rounded d-flex justify-content-around flex-wrap p-3" onClick={()=>{
+        
+        const video = videoRef.current;
+        if (!video.paused) {
+          video.pause();
+        }
+        setDisplay("d-none")
+    setQuizDisplay('')}}>
         <div className="lesson__title__logo d-flex gap-1 align-items-center">
 
           <div className="course__title">

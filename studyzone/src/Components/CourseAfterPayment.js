@@ -1,21 +1,12 @@
 import React from 'react'
-import CardSlider from '../Components/Card_Slider';
-import CourseBeforePayment from '../Components/CourseBeforePayment';
-import CourseAfterPayment from '../Components/CourseAfterPayment';
-const CourseDetails = () => {
-  console.log(localStorage.getItem("coursePayed"));
-  if (localStorage.getItem("coursePayed") === null) {
-    localStorage.setItem("coursePayed", "false");
-  }
-  
+import CourseVideo from './CourseVideo'
+import Rating from '@mui/material/Rating';
+
+const CourseAfterPayment = () => {
   return (
     <>
-    {/* <div className='course__details__background'>
-      <img className='w-100' src="..\Images\background.jpg" alt="img" />
-    </div>
-
-    <div className="course__details container row m-auto my-4 ">
-      <div className="course__rating rounded p-3 col-12 col-md-12 col-xl-7 mx-auto row gap-5 order-2 order-xl-1">
+      <CourseVideo/>
+      <div className="course__rating rounded container p-3 col-12 col-md-12 col-xl-12 mx-auto row gap-5 order-2 order-xl-1 my-3">
           <div className="course__rating-stats mx-auto col-3 bg-white d-flex justify-content-center flex-column gap-3 rounded-2 py-4">
             <h4 className="course__rating__number text-center">4 out of 5</h4>
 
@@ -106,86 +97,8 @@ const CourseDetails = () => {
             </div>
           </div>
       </div>
-
-
-
-
-      <div className="course__info col-4 col-sm-4 col-md-4 border order-1 order-xl-2 mb-4 mx-auto bg-white rounded-4 p-3 border-0 shadow" style={{marginTop:"-12%"}}>
-      <div className="course__img"><img src="..\Images\course-image.jpg" alt="img" width={"100%"}/></div>
-      <h3 className="course__name text-dark mt-1">randomName</h3>
-      <div className="course__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat adipisci qui temporibus delectus, nihil nemo dolor illo, cumque quis modi non fuga laboriosam eveniet exercitationem assumenda vitae dicta? Dolorum.</div>
-      <h2 className="price text-black fw-bold my-3 ms-1">$49.99</h2>
-      <button className='buy__button btn btn-info' onClick={()=>{localStorage.setItem("coursePayed",true)}}>Buy Now</button>
-      <hr />
-      <div className="course__payment__info d-flex flex-column gap-3">
-        <h5 className='text-dark fw-bold'>This Course includes :</h5>
-        <div className="course__payment d-flex gap-2">
-          <img width={"25px"} height={"25px"} src="..\Images\icon1.svg" alt="icon" />
-          <div className="fw-bold">Money Back Guarantee</div>
-        </div>
-        <div className="course__payment d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\camera.svg" alt="icon" />
-        <div className="fw-bold">Access on all devices</div>
-      
-        </div>
-        <div className="course__payment d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\certificate.svg" alt="icon" />
-        <div className="fw-bold">Certification of completion</div>
-        </div>
-        <div className="course__payment d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\time_green.svg" alt="icon" />
-        <div className="fw-bold">32 lessons</div>
-
-        </div>
-        <div className="course__payment d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\language.svg" alt="icon" />
-        <div className="fw-bold">English</div>
-
-        </div>
-      </div>
-
-      <hr />
-      <div className="course__knowledge d-flex flex-column gap-2">
-        <h5 className='course__learn text-dark fw-bold'>What you'll learn :</h5>
-        <div className="course__learning__points d-flex flex-column gap-3">
-        <div className="course__learning d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
-        </div>
-
-        <div className="course__learning d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
-        </div>
-
-        <div className="course__learning d-flex gap-2">
-        <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">You will learn something</div>
-        </div>
-        </div>
-      </div>
-      </div>
-
-
-
-    </div> */}
-    {localStorage.getItem("coursePayed") === 'true'&& <CourseAfterPayment/>}
-    {localStorage.getItem("coursePayed") === 'false'&& <CourseBeforePayment/>}
-
-        <div className="m-auto card__slider__recommended pt-2">
-          <div className='recommended__text d-flex justify-content-between m-auto mt-3' style={{width:"90%"}}>
-          <h4 className="p-2">
-            <b>Recommended for you</b>
-          </h4>            <div className="see__all">see all</div>
-          </div>
-          
-          <div className='m-auto' style={{width:"90%"}}><CardSlider /></div> </div>
-        
-
-        {/* <CourseVideo/> */}
     </>
   )
 }
 
-
-export default CourseDetails
+export default CourseAfterPayment

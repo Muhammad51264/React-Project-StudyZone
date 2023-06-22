@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div className='card d-flex gap-1 flex-column rounded-4 p-3 shadow mx-3 my-3 position-relative' style={{width:props.width ,minWidth:"250px"}}>
+    <div className='card d-flex gap-1 flex-column rounded-4 p-3 shadow mx-3 my-3 position-relative' style={{width:props.width ,minWidth:"250px",height:props.height}} id={props.key}>
         <div className="img__container mb-2">
             <img className='w-100 border border-1 rounded' src={props.imgLink} alt=""  height={"250px"}/>
         </div>
@@ -27,6 +27,7 @@ const Card = (props) => {
 //Card default values
 Card.defaultProps = {
   width: "250px",
+  height: "480px",
   imgLink: "../Images/logo-black.png",
   title: "Course Title",
   desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque soluta",
