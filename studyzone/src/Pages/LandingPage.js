@@ -5,9 +5,9 @@ function LandingPage() {
   const success = [
     { num: "15K", desc: "Students" },
     { num: "75%", desc: "TotalSuccess" },
-    { num: "35%", desc: "Main question" },
-    { num: "26%", desc: "Chief experts" },
-    { num: "16%", desc: "Years of experience" },
+    { num: "35Q", desc: "Main question" },
+    { num: "26E", desc: "Chief experts" },
+    { num: "16Y", desc: "Years of experience" },
   ];
   return (
     <>
@@ -23,13 +23,14 @@ function LandingPage() {
               StudyZone is an interesting platform that will teach
             </span>
             <p className=" brief_bg">you in more an interactive way</p>
-            <button
+            <Link
+              to={"/login"}
               className="btn btn-secondary "
               id="btn_landing_page"
               type="button"
             >
               Join for free
-            </button>
+            </Link>
           </div>
         </div>
         <div></div>
