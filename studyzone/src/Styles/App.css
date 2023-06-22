@@ -353,6 +353,7 @@ margin: 0 auto;
   transform: translate(-50%, -50%);
 }
 .aboutUs_img{
+  opacity: 0.9;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -379,6 +380,7 @@ content: "Our ";
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 4%;
+    margin-top: 2%;
   }
   .our_success_container{
     margin-top:4% ;
