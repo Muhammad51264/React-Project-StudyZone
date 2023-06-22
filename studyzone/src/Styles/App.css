@@ -353,11 +353,15 @@ margin: 0 auto;
   transform: translate(-50%, -50%);
 }
 .aboutUs_img{
+  opacity: 0.9;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+.aboutUs_img:hover{
+  width: 65%;
 }
 /* / what is SZ */
 
@@ -379,6 +383,7 @@ content: "Our ";
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 4%;
+    margin-top: 2%;
   }
   .our_success_container{
     margin-top:4% ;
@@ -388,6 +393,7 @@ content: "Our ";
   .main_footer{
 background-color: var(--main-color);
 height: fit-content;
+padding-bottom: 1%;
   }
   #btn_subscribe{
     background-color: var(--white-font-color);
@@ -408,6 +414,7 @@ height: fit-content;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    padding:4px 0 4px 0 ;
 }
 #subscribe_input::placeholder{
   color: var(--white-font-color);
@@ -448,6 +455,9 @@ height: fit-content;
 }
 .col_top_categories{
   margin-bottom: 2em;
+}
+.main_footer{
+padding-bottom: 5%;
 }
 }
 
@@ -518,6 +528,11 @@ height: fit-content;
     gap: 10px;
   }
 }
+@media only screen and (max-width: 400px) {
+ .courses--page--card{
+  width: 200px;
+ }
+  }
 
 /* Courses Page */
 

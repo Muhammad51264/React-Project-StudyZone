@@ -1,5 +1,4 @@
 import React from "react";
-
 //Card components:
 //parameters:1-width 2-imgLink 3-title 4-desc 5-price 6-categoryLogo 7-category 8-hours
 
