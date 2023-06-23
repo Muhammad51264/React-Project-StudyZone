@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 const CourseDetails = () => {
   let id=useParams().courseId;
     let course=CoursesInfo.find(course=>course.id===id);
-    console.log("dddddd")
-    console.log(course)
-  console.log(localStorage.getItem("coursePayed"));
+    console.log(course);
+
+
   if (localStorage.getItem("coursePayed") === null) {
     localStorage.setItem("coursePayed", "false");
   }

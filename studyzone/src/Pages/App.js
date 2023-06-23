@@ -39,6 +39,8 @@ function App() {
 
       <Route path="/" Component={LandingPage}></Route>
       <Route path='/courses' Component={Courses}></Route>
+      <Route path='/category/:category' Component={Courses}></Route>
+
       <Route path='/courses/:courseId' Component={CourseDetails}></Route>
       </Route>
 

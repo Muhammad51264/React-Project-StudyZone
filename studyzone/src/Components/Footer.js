@@ -25,7 +25,7 @@ const Footer = () => {
               <input
                 type="text"
                 id="subscribe_input"
-                placeholder="Your Email"
+                placeholder=" Your Email"
               />
               <button
                 className="btn btn-secondary "

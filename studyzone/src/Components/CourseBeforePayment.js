@@ -145,17 +145,17 @@ const CourseBeforePayment = ({course}) => {
         <div className="course__learning__points d-flex flex-column gap-3">
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">{course.whatYouWillLearn[0]}</div>
+        <div className="fw-bold">{course.whatyouwillearn[0]}</div>
         </div>
 
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">{course.whatYouWillLearn[1]}</div>
+        <div className="fw-bold">{course.whatyouwillearn[1]}</div>
         </div>
 
         <div className="course__learning d-flex gap-2">
         <img width={"25px"} height={"25px"} src="..\Images\check.svg" alt="icon" />
-        <div className="fw-bold">{course.whatYouWillLearn[2]}</div>
+        <div className="fw-bold">{course.whatyouwillearn[2]}</div>
         </div>
         </div>
       </div>

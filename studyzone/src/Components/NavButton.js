@@ -1,14 +1,17 @@
 import React from 'react'
 import NavCategory from './navCategory';
-
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 function NavButton() {
+  let navigate=useNavigate();
   return (
     <>
     <div className="navbar__text">
     <NavCategory/>
-    <a href='#'>Courses</a>
-    <a href='#'>About us</a>
+    <Link to='/courses'>Courses</Link>
+    <Link to='/' onClick={()=>{
+    window.scrollTo(0, 1650);} 
+  }>About us</Link>
 </div>
     <div className="navbar__button">
        <button className='btnLogin'>
