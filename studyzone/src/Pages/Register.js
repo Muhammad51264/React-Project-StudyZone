@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Register_input from '../Components/Register_input'
 const Register = () => {
   return (
-    <div>
-      
-    </div>
+   <>
+   <Register_input/>
+   </>
   )
 }
 

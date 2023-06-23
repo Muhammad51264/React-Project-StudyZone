@@ -162,6 +162,15 @@ padding: 0;
     background-size: cover;
 }
 
+.registration_column_img{
+  width: 55%;
+  height: 100vh;
+  background-image: url('../../public/Images/regist-bk.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* .login-form .column img {
   max-width: 100%;
   height: auto;
@@ -185,7 +194,8 @@ margin: 20px auto 0 auto;
 }
 
 .login-form .column .input-groups input[type="text"],
-.login-form .column .input-groups input[type="password"] {
+.login-form .column .input-groups input[type="password"],
+.login-form .column .input-groups input[type="email"] {
   width: 100%;
   margin: 0 auto;
   padding: 15px 25px;
@@ -302,6 +312,11 @@ padding:0 10px;
   } */
 
   .login_column_img{
+    display: none;
+  }
+
+  .registration_column_img
+  {
     display: none;
   }
 }
