@@ -227,12 +227,13 @@ margin: 20px auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+  padding: 20px;
+
 
 }
 
 .login-form .column  .icons div img{
   width: 100%;
-  padding: 20px;
   cursor: pointer;
 }
 
@@ -296,9 +297,9 @@ padding:0 10px;
     width: 100%;
   }
 
-  .login-form .column img {
+  /* .login-form .column img {
     margin-bottom: 20px;
-  }
+  } */
 
   .login_column_img{
     display: none;
@@ -312,8 +313,14 @@ padding:0 10px;
 
   .login-form .column .input-groups {
     margin-bottom: 10px;
+    width: 90%;
   }
-
+  .login-form .column  .icons div{
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+  }
+ 
   .login-form .column  .checkbox {
     flex-direction: column;
 
