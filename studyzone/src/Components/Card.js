@@ -8,7 +8,8 @@ const Card = (props) => {
   const navigate=useNavigate();
   return (
     <div className='card d-flex gap-1 flex-column rounded-4 p-3 shadow mx-3 my-3 position-relative' style={{width:props.width ,minWidth:"250px",height:props.height}} id={props.id} onClick={()=>{navigate(`/courses/${props.id}`)
-  window.location.reload()}}>
+  window.location.reload()
+  }}>
         <div className="img__container mb-2">
             <img className='w-100 border border-1 rounded' src={props.imgLink} alt=""  height={"250px"}/>
         </div>
@@ -18,7 +19,7 @@ const Card = (props) => {
                 <div className="card__category__name">{props.category}</div>
             </div>
             <div className="card__category__lessons d-flex gap-1 align-items-center">
-            <img  width={"15px"} src="../Images/time.svg" alt="" />
+            <img  width={"15px"} src="../../Images/time.svg" alt="" />
                 <div className="card__category__time">{props.hours}</div>
             </div>
         </div>

@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../Components/Card";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import CardSlider from "../Components/Card_Slider";
 import CoursesInfo from "../data/CoursesInfo";
 
 const Courses = () => {
   const [filters, setFilters] = useState("");
   const [sortOrder, setSortOrder] = useState("desc");
+  const { category } = useParams();
+
+  // Update the filter value when the category changes
+  useEffect(() => {
+    if (category) {
+      setFilters(category);
+    }
+  }, [category]);
 
   // Filter function to filter the courses according to category
   const filterCourses = (category) => {
@@ -28,7 +36,7 @@ const Courses = () => {
   return (
     <>
       <div className="test"></div>
-      <img className="courses-jumbotron" src="Images/jumbotron.jpg" alt="" />
+      <img className="courses-jumbotron" src="../../Images/jumbotron.jpg" alt="" />
 
       <div className="container my-5">
         <div className="courses--heading">
@@ -40,7 +48,7 @@ const Courses = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i class="bi bi-sliders"></i>
+              <i className="bi bi-sliders"></i>
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
               <li>
@@ -78,14 +86,14 @@ const Courses = () => {
                   className="dropdown-item"
                   href="#"
                 >
-                  Price(<i class="bi bi-arrow-up"></i>
-                  <i class="bi bi-arrow-down">)</i>
+                  Price(<i className="bi bi-arrow-up"></i>
+                  <i className="bi bi-arrow-down">)</i>
                 </button>
               </li>
             </ul>
           </div>
         </div>
-        <div className="cards--container ">
+        <div className="cards--container">
           {filters
             ? filteredCourses.map((course) => (
                 <Card
@@ -122,7 +130,6 @@ const Courses = () => {
           <h4 className="p-2">
             <b>Recommended for you</b>
           </h4>
-
         </div>
         <div className="container courses--recommended">
           <CardSlider />
