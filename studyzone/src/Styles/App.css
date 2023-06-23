@@ -23,7 +23,10 @@
   --second-font-color: #696984;
   --navbar-color: #f2f2f2;
 }
-
+*
+{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -364,7 +367,8 @@ margin: 20px auto 0 auto;
 }
 
 .login-form .column .input-groups input[type="text"]:focus ,
-.login-form .column .input-groups input[type="password"]:focus  {
+.login-form .column .input-groups input[type="password"]:focus ,
+.login-form .column .input-groups input[type="email"]:focus  {
     border: 2px solid #49bbbd;
     outline: none;
 }

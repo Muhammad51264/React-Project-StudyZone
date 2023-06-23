@@ -13,9 +13,9 @@ console.log(window.location.href[7]==="l");
       <NavSearch/>
  
 
-    {/* <NavButton/> */}
+    <NavButton/>
 
-    <NavIcons/>
+    {/* <NavIcons/> */}
 
 
     </nav>

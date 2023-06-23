@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "../Components/Card";
 import { Link } from "react-router-dom";
 import CardSlider from "../Components/Card_Slider";
-import CoursesInfo from "./CoursesInfo";
+import CoursesInfo from "../data/CoursesInfo";
 
 const Courses = () => {
   const [filters, setFilters] = useState("");

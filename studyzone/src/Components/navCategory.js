@@ -1,5 +1,5 @@
 import React from 'react'
-import { CoursesInfo } from '../Pages/CoursesInfo'
+import { CoursesInfo } from '../data/CoursesInfo'
 
 function NavCategory() {
 

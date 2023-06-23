@@ -3,7 +3,7 @@ import CardSlider from '../Components/Card_Slider';
 import CourseBeforePayment from '../Components/CourseBeforePayment';
 import CourseAfterPayment from '../Components/CourseAfterPayment';
 import { useParams } from 'react-router-dom';
-import CoursesInfo from '../Pages/CoursesInfo';
+import CoursesInfo from '../data/CoursesInfo';
 import { Link } from 'react-router-dom';
 const CourseDetails = () => {
   let id=useParams().courseId;

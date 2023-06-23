@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaSistrix } from 'react-icons/fa';
-import CoursesInfo from '../Pages/CoursesInfo';
+import CoursesInfo from '../data/CoursesInfo';
 
 const NavSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');

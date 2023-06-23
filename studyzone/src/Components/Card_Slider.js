@@ -2,7 +2,7 @@ import Card from './Card';
 import React from 'react';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel';
-import CoursesInfo from '../Pages/CoursesInfo';
+import CoursesInfo from '../data/CoursesInfo';
 const handleDragStart = (e) => e.preventDefault();
 
 let list= CoursesInfo.slice(0,8).map((course) => (
