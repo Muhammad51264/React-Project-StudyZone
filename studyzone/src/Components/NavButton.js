@@ -14,12 +14,14 @@ function NavButton() {
   }>About us</Link>
 </div>
     <div className="navbar__button">
+      <Link to="/login">
        <button className='btnLogin'>
         Login
-       </button>
+       </button></Link>
+       <Link to='/register'>
        <button className='btnSignUp'>
        Sign up
-       </button>
+       </button></Link>
     </div>
     </>
         )
