@@ -4,6 +4,7 @@ import CourseBeforePayment from '../Components/CourseBeforePayment';
 import CourseAfterPayment from '../Components/CourseAfterPayment';
 import { useParams } from 'react-router-dom';
 import CoursesInfo from '../Pages/CoursesInfo';
+import { Link } from 'react-router-dom';
 const CourseDetails = () => {
   let id=useParams().courseId;
     let course=CoursesInfo.find(course=>course.id===id);
@@ -24,7 +25,7 @@ const CourseDetails = () => {
           <div className='recommended__text d-flex justify-content-between m-auto mt-3' style={{width:"90%"}}>
           <h4 className="p-2">
             <b>Recommended for you</b>
-          </h4>            <div className="see__all">see all</div>
+          </h4>            <Link to="/courses" style={{textDecoration:'none'}}><div className="see__all">see all</div></Link>
           </div>
           
           <div className='m-auto' style={{width:"90%"}}><CardSlider /></div> </div>
