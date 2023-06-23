@@ -176,7 +176,7 @@ function LandingPage() {
       </div>
       <div className="num_of_succses">
         {success.map((success, id) => (
-          <div key={id}>
+          <div key={id} className="text-center mx-3">
             <h1>{success.num}</h1>
             <p>{success.desc}</p>
           </div>

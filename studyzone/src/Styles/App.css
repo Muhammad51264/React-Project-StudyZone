@@ -749,7 +749,7 @@ img.border_girl_img{
   align-items: center;
   justify-content: space-evenly;
   background: -webkit-linear-gradient(#136cb5, #49bbbd);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4%;
   margin-top: 2%;

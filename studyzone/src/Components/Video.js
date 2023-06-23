@@ -1,6 +1,7 @@
 import React from 'react'
-
 const Video = ({display ,videoRef}) => {
+
+        
     return(
         <div className={`${display}`}>
 

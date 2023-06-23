@@ -3,6 +3,8 @@ import NavButton from "./NavButton"
 import NavIcons from './navIcons';
 import NavSearch from './navSearch';
 const Nav = () => {
+console.log(window.location.href[7]==="l");
+
   return (
     <nav className="navbar_">
       <div className="navbar__logo">

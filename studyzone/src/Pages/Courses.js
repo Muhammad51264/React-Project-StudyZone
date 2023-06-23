@@ -122,9 +122,7 @@ const Courses = () => {
           <h4 className="p-2">
             <b>Recommended for you</b>
           </h4>
-          <Link className="p-2 courses--recommended--heading--link" to="#">
-            See all..
-          </Link>
+
         </div>
         <div className="container courses--recommended">
           <CardSlider />
