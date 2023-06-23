@@ -12,11 +12,14 @@ import LandingPage from './LandingPage';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Nav from '../Components/Nav';
 import Footer from '../Components/Footer';
+
 function App() {
   return (
     <>
     <Nav/>
-    <BrowserRouter>
+    <Login/>
+
+    {/* <BrowserRouter>
     <Routes>
       <Route path="/" Component={LandingPage}></Route>
       <Route path='/login' Component={Login}></Route>
@@ -25,7 +28,7 @@ function App() {
       <Route path='/courses/:courseId' Component={CourseDetails}>
       </Route>
     </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
     <Footer />
     </>
   
