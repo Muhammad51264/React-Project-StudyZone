@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { QuizData } from "../Pages/QuizQuestions";
+import { QuizData } from "./QuizQuestions";
 import QuizResults from "./QuizResults";
 
-const Quiz = ({display}) => {
+const Quiz = ({ display }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [clickedOption, setClickedOption] = useState(0);
@@ -24,54 +24,66 @@ const Quiz = ({display}) => {
     }
   };
 
-  const retake = () => {
+  const resetAll = () => {
     setShowResult(false);
     setCurrentQuestion(0);
     setClickedOption(0);
     setScore(0);
   };
 
-  return (
-    <div className={display}>
-      {showResult ? (
+  const renderQuizContent = () => {
+    if (showResult) {
+      return (
         <QuizResults
           score={score}
           totalScore={QuizData.length}
-          retake={retake}
+          tryAgain={resetAll}
         />
-      ) : (
-        <div className="container  quiz--container">
-          <div className=" row quiz--question">
+      );
+    } else {
+      return (
+        <div className="container quiz--container">
+          <div className="row quiz--question">
             <h4>
               {currentQuestion + 1}.{QuizData[currentQuestion].question}
             </h4>
           </div>
           <div className="row quiz--options--image">
-            <div className="col d-flex flex-column  justify-content-evenly w-75">
+            <div className="col d-flex flex-column justify-content-evenly w-75">
               {QuizData[currentQuestion].options.map((option, index) => {
+                const isClicked = clickedOption === index + 1;
+                const optionClass = isClicked ? "checked" : "";
                 return (
                   <button
-                    className={`quiz--optionbtn ${
-                      clickedOption === index + 1 ? "checked" : null
-                    }`}
+                    className={`quiz--optionbtn ${optionClass}`}
                     key={index}
-                    onClick={() => setClickedOption(index + 1)}
+                    onClick={() => {
+                      setClickedOption(index + 1);
+                    }}
                   >
-                    <h5>{option}</h5>
+                    {option}
                   </button>
                 );
               })}
             </div>
-
-            <img className="col" src="../Images/Quiz.svg" alt="quiz-pic" />
+            <img
+              className="col quiz--image"
+              src="../Images/Quiz.svg"
+              alt="quiz-pic"
+            />
           </div>
-          <button className="row d-flex quiz--btn" onClick={changeQuestion}>
-            <h4>Next</h4>
+          <button
+            className="row d-flex quiz--btn fs-3"
+            onClick={changeQuestion}
+          >
+            Next
           </button>
         </div>
-      )}
-    </div>
-  );
+      );
+    }
+  };
+
+  return <div className={display}>{renderQuizContent()}</div>;
 };
 
 export default Quiz;
