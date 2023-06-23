@@ -128,7 +128,66 @@ body {
 .navbar__text a:hover {
   color: var(--main-color);
 }
+@media only screen and (max-width: 1023px) {
+  .navbar_{
+    padding: 10px 40px;
+  }
 
+}
+@media only screen and (max-width: 768px) {
+  .navbar_{
+    padding: 10px 10px;
+  }
+
+  .navbar__button button {
+    padding: 2px 18px;
+    font-size: 14px;
+}
+.navbar__text {
+  width: 23%;
+  font-size: 12px;
+}
+.navbar__search {
+
+  font-size: 13px;
+  width: 33%;
+}
+.navbar__search span {
+  top: 8px;
+  font-size: 17px;
+}
+.navbar__search input{
+  height: 40px;
+}
+}
+
+@media only screen and (max-width: 568px) {
+.navbar_{
+  flex-direction: column;
+}
+.navbar_ div{
+  width: 80%;
+  margin: 10px 0;
+}
+.navbar_ .navbar__logo{
+  width: 30%;
+  margin: 15px 0;
+}
+
+.navbar_  .navbar__text{
+  font-size: 15px;
+}
+.navbar__button{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__button button {
+  padding: 6px 18px;
+  font-size: 14px;
+}
+
+}
 /* Login and Register pages*/
 .login_container {
   display: flex;

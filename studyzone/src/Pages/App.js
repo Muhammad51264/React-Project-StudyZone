@@ -18,10 +18,10 @@ function App() {
     <>
     <Nav/>
 
-    <Register/>
+    {/* <Register/> */}
     {/* <Login/> */}
 
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <Routes>
       <Route path="/" Component={LandingPage}></Route>
       <Route path='/login' Component={Login}></Route>
@@ -30,7 +30,7 @@ function App() {
       <Route path='/courses/:courseId' Component={CourseDetails}>
       </Route>
     </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
     <Footer />
     </>
   
