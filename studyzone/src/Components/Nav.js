@@ -2,6 +2,8 @@ import React from 'react'
 import { FaSistrix } from "react-icons/fa";
 import NavButton from "./NavButton"
 const Nav = () => {
+console.log(window.location.href[7]==="l");
+
   return (
     <nav className="navbar_">
       <div className="navbar__logo">

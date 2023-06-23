@@ -2,7 +2,7 @@ import 'video.js/dist/video-js.css';
 import 'video.js/dist/video.js';
 import '../Styles/App.css'; 
 import Video from './Video';
-import { useState,useRef } from 'react';
+import { useState,useRef} from 'react';
 import Quiz from './Quiz';
 
 
@@ -10,11 +10,14 @@ const CourseVideo = () => {
   let [display,setDisplay]=useState("")
   let [quizDisplay,setQuizDisplay] = useState("d-none")
   let videoRef = useRef(null);
+
   return (
     <div className='course__courses__tests container row p-4 m-auto rounded my-3'>
       <div className="video__container col-12 col-xl-8" id='output-container'>
         
       <Video display={display} videoRef={videoRef}/>
+
+      
       <Quiz display={quizDisplay}/>
       </div>
       

@@ -4,7 +4,6 @@ import CourseBeforePayment from '../Components/CourseBeforePayment';
 import CourseAfterPayment from '../Components/CourseAfterPayment';
 import { useParams } from 'react-router-dom';
 import CoursesInfo from '../Pages/CoursesInfo';
-
 const CourseDetails = () => {
   let id=useParams().courseId;
     let course=CoursesInfo.find(course=>course.id===id);
@@ -14,7 +13,7 @@ const CourseDetails = () => {
   if (localStorage.getItem("coursePayed") === null) {
     localStorage.setItem("coursePayed", "false");
   }
-  
+
   return (
     <>
 
