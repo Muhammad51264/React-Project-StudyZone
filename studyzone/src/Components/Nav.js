@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaSistrix } from "react-icons/fa";
 import NavButton from "./NavButton"
+import NavIcons from './navIcons';
 const Nav = () => {
   return (
     <nav className="navbar_">
@@ -11,13 +12,12 @@ const Nav = () => {
   <span><FaSistrix /></span>
   <input type="text" placeholder="Search for anythings" />
 </div>
-      <div className="navbar__text">
-        <a href='#'>Category</a>
-        <a href='#'>Courses</a>
-        <a href='#'>About us</a>
-    </div>
+ 
 
-    <NavButton/>
+    {/* <NavButton/> */}
+
+    <NavIcons/>
+
 
     </nav>
   );

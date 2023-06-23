@@ -128,6 +128,62 @@ body {
 .navbar__text a:hover {
   color: var(--main-color);
 }
+
+.nav_profile{
+  width: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center ;
+}
+.navbar_icons a{
+color: var(--main-color);
+text-decoration: none;
+font-size: 20px;
+}
+
+.nav_profile span{
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+
+}
+
+.navbar_icons
+{
+  width: 15%;
+    justify-content: space-around;
+}
+
+.nav_dropdowns{
+  list-style: none;
+}
+
+.nav_dropdowns:hover .nav_category_dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.nav_category_dropdown {
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1), opacity 0.3s ease-in-out;
+  transform: translateY(-4rem);
+  list-style: none;
+  margin: 15px 0;
+  padding: 10px 20px 10px 15px;
+  position: absolute;
+  z-index: 99;
+  background: rgba(243, 240, 240, 0.9);
+
+}
+.nav_category_dropdown a {
+  font-weight: 300;
+  font-size: 1.2rem;
+
+}
+
+
+
+
 @media only screen and (max-width: 1023px) {
   .navbar_{
     padding: 10px 40px;
@@ -176,10 +232,20 @@ body {
 
 .navbar_  .navbar__text{
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .navbar__button{
   display: flex;
   flex-direction: column;
+}
+
+.navbar_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar__button button {
