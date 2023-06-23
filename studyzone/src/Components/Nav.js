@@ -11,7 +11,6 @@ console.log(window.location.href[7]==="l");
         <img src='../Images/logo-no-background.png'></img>
       </div>
       <NavSearch/>
- 
 
     <NavButton/>
 
