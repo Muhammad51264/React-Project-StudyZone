@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import Card from "../Components/Card";
 import { Link } from "react-router-dom";
-import CardSlider from '../Components/Card_Slider';
+import CardSlider from "../Components/Card_Slider";
 import CoursesInfo from "./CoursesInfo";
 
-
-// test
-import Quiz from "../Components/Quiz";
 const Courses = () => {
   const [filters, setFilters] = useState("");
   const [sortOrder, setSortOrder] = useState("desc");
@@ -56,12 +53,20 @@ const Courses = () => {
                 </Link>
               </li>
               <li>
-                <Link onClick={() => filterCourses("Marketing")} className="dropdown-item" href="#">
+                <Link
+                  onClick={() => filterCourses("Marketing")}
+                  className="dropdown-item"
+                  href="#"
+                >
                   Marketing
                 </Link>
               </li>
               <li>
-                <Link onClick={() => filterCourses("Design")} className="dropdown-item" href="#">
+                <Link
+                  onClick={() => filterCourses("Design")}
+                  className="dropdown-item"
+                  href="#"
+                >
                   Design
                 </Link>
               </li>
@@ -73,7 +78,8 @@ const Courses = () => {
                   className="dropdown-item"
                   href="#"
                 >
-                  Price(<i class="bi bi-arrow-up"></i><i class="bi bi-arrow-down">)</i>
+                  Price(<i class="bi bi-arrow-up"></i>
+                  <i class="bi bi-arrow-down">)</i>
                 </button>
               </li>
             </ul>

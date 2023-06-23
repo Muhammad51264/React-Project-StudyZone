@@ -7,7 +7,7 @@ export const QuizData = [
       "A database management system",
       "A design pattern",
     ],
-    answer: 0,
+    answer: 1,
   },
   {
     question: "Which of the following is NOT a React lifecycle method?",
@@ -17,7 +17,7 @@ export const QuizData = [
       "componentDidUpdate",
       "componentWillRender",
     ],
-    answer: 3,
+    answer: 4,
   },
   {
     question: "What is the purpose of state in React?",
@@ -27,17 +27,17 @@ export const QuizData = [
       "To define the structure of a component",
       "To handle asynchronous requests",
     ],
-    answer: 0,
+    answer: 1,
   },
   {
     question: "What are hooks in React?",
     options: [
       "Functions that let you use state and other React features without writing a class",
-      "React built-in components",
       "Methods used for debugging React applications",
       "JavaScript libraries for React development",
+      "none of the above",
     ],
-    answer: 0,
+    answer: 1,
   },
   {
     question: "What is JSX?",
@@ -47,6 +47,6 @@ export const QuizData = [
       "A package manager for React applications",
       "A testing framework for React",
     ],
-    answer: 0,
+    answer: 1,
   },
 ];
