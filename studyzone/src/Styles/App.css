@@ -157,7 +157,7 @@ padding: 0;
 .login_column_img{
     width: 55%;
     height: 100vh;
-    background-image: url('../../public/Images/bkLogin.png');
+    background-image: url('../../public/Images/login-bk.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -174,7 +174,7 @@ padding: 0;
 }
 
 .login-form .column .input-groups {
-  width: 75%;
+  width: 65%;
 margin: 20px auto 0 auto;
 }
 
@@ -186,7 +186,7 @@ margin: 20px auto 0 auto;
 
 .login-form .column .input-groups input[type="text"],
 .login-form .column .input-groups input[type="password"] {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 15px 25px;
   border-radius: 15px;
@@ -200,11 +200,11 @@ margin: 20px auto 0 auto;
 }
 
 .login-form .column  .checkbox {
-  width: 100%;
+  
     margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 14px;
 }
 
@@ -214,19 +214,26 @@ margin: 20px auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 35px;
   font-size: 14px;
 }
 
 .login-form .column  .icons div{
 
-    width: 15%;
-    height: 50px;
-    border: 1px solid #ddd;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #49bbbd;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.login-form .column  .icons div img{
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .login-form .column .input-groups .checkbox label {

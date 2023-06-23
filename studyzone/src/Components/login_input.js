@@ -1,5 +1,5 @@
 import React from 'react'
-
+import LoginIcons from './loginIcons'
 const Login_input = () => {
   return (
     <div className="login_container">
@@ -28,8 +28,8 @@ const Login_input = () => {
             required=""
           />
         </div>
-        <div className=" checkbox ">
-          <div>
+        <div className="input-groups checkbox ">
+        <div style={{ display: "flex", gap: 10 }}>
             <input type="checkbox" id="remember" name="remember" />
             <label htmlFor="remember">Remember me</label>
           </div>
@@ -47,16 +47,12 @@ const Login_input = () => {
             Don't have an account ? <a href="#">Sign up</a>
           </p>
         </div>
-        <div className="checkbox signup-link text_with_line">
+        <div className="input-groups checkbox signup-link text_with_line">
           <h2>
             <span>or continue with</span>
           </h2>
         </div>
-        <div className="icons  ">
-          <div>1</div>
-          <div>1</div>
-          <div>1</div>
-        </div>
+   <LoginIcons/>
       </div>
       <div className="login_column_img"></div>
     </form>
