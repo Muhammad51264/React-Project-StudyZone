@@ -515,19 +515,6 @@ padding:0 10px;
 /* Landing Page */
 
 /*backgroundImage&info */
-
-/* .bg_landing_page {
-  position: relative;
-}
-.girl_img {
-  position: absolute;
-  top: -18px;
-  right: 10%;
-}
-img.border_girl_img{
-  border-bottom-right-radius:  10em;
-
-} */
 .textBox_header_landing_page {
   position: absolute;
   top: 30%;
@@ -567,6 +554,7 @@ img.border_girl_img{
   font-weight: bold;
 }
 /* A Broad Selection Of Courses. */
+
 /* All courses */
 
 #btn_landing_page {
