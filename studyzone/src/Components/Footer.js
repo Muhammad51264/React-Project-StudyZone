@@ -5,18 +5,18 @@ const Footer = () => {
     <div>
       <footer className="text-center main_footer text-white">
         <div className="container p-4 pb-0">
-            <p className="d-flex justify-content-center align-items-center">
-              <img
-                src="../Images/logo-white-removebg.png"
-                alt="..."
-                height={"12%"}
-                width={"12%"}
-                className="footer_logo"
-              />
-              <span className="slogan_footer">
-                <span>Empower Your Mind, Expand Your Horizons!</span>
-              </span>
-            </p>
+          <p className="d-flex justify-content-center align-items-center">
+            <img
+              src="../Images/logo-white-removebg.png"
+              alt="..."
+              height={"12%"}
+              width={"12%"}
+              className="footer_logo"
+            />
+            <span className="slogan_footer">
+              <span>Empower Your Mind, Expand Your Horizons!</span>
+            </span>
+          </p>
         </div>
         <p>Subscribe to get our Newsletter</p>
         <div className="container  pb-0">
@@ -32,7 +32,7 @@ const Footer = () => {
                 id="btn_subscribe"
                 type="button"
               >
-                Subscribe{" "}
+                Subscribe
               </button>
             </p>
           </section>

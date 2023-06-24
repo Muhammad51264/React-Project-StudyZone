@@ -68,7 +68,7 @@ function LandingPage() {
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
-                  <i className="fa-solid fa-file-invoice"></i>{" "}
+                  <i className="fa-solid fa-file-invoice"></i>
                 </div>
                 <h5 className="card-title card_title_topCategories">
                   Customer Tracking & Attendence
@@ -77,13 +77,13 @@ function LandingPage() {
                   Schedule and reserve classroomof student attendance.
                 </p>
               </div>
-            </div>{" "}
+            </div>
           </div>
           <div className="col col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
-                  <i className="fa-solid fa-calendar-days"></i>{" "}
+                  <i className="fa-solid fa-calendar-days"></i>
                 </div>
                 <h5 className="card-title card_title_topCategories">
                   Easy Scheduling & Attendance Tracking
@@ -92,13 +92,13 @@ function LandingPage() {
                   Schedule and reserve className room of student attendance.
                 </p>
               </div>
-            </div>{" "}
+            </div>
           </div>
           <div className="col col_top_categories">
             <div className="card mx-auto card_topCategories">
               <div className="card-body">
                 <div className="icon-wrapper">
-                  <i className="fa-solid fa-people-group"></i>{" "}
+                  <i className="fa-solid fa-people-group"></i>
                 </div>
                 <h5 className="card-title card_title_topCategories">
                   Customer Tracking & Attendence
@@ -108,7 +108,7 @@ function LandingPage() {
                   track emails .
                 </p>
               </div>
-            </div>{" "}
+            </div>
           </div>
           <div className="col col_top_categories">
             <div className="card mx-auto card_topCategories">
@@ -123,7 +123,7 @@ function LandingPage() {
                   Schedule and reserve classroomof student attendance.
                 </p>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +170,7 @@ function LandingPage() {
           <p className="what_sz_about">
             Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
             sollicitudin at nec nam et pharetra gravida. Adipiscing a quis
-            ultrices eu ornare tristique vel nisl orci.{" "}
+            ultrices eu ornare tristique vel nisl orci.
           </p>
         </div>
       </div>
