@@ -32,6 +32,7 @@ const Card = (props) => {
 //Card default values
 Card.defaultProps = {
   id: 0,
+  
   width: "250px",
   height: "480px",
   imgLink: "../Images/logo-black.png",

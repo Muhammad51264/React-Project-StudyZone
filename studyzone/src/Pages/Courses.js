@@ -35,9 +35,6 @@ const Courses = () => {
 
   return (
     <>
-      <div className="test"></div>
-      <img className="courses-jumbotron" src="../../Images/jumbotron.jpg" alt="" />
-
       <div className="container my-5">
         <div className="courses--heading">
           <h3 className="courses--left">Our Courses</h3>
@@ -48,7 +45,7 @@ const Courses = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="bi bi-sliders"></i>
+              <i className="bi bi-sliders"></i> Filter
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
               <li>
@@ -94,12 +91,12 @@ const Courses = () => {
           </div>
         </div>
         <div className="cards--container">
-          {filters
+        {filters
             ? filteredCourses.map((course) => (
                 <Card
                   id={course.id}
                   key={course.id}
-                  width="350px"
+                  width="300px"
                   imgLink={course.image}
                   title={course.courseName}
                   desc={course.description}
@@ -113,7 +110,7 @@ const Courses = () => {
                 <Card
                   id={course.id}
                   key={course.id}
-                  width="350px"
+                  width="300px"
                   imgLink={course.image}
                   title={course.courseName}
                   desc={course.description}
