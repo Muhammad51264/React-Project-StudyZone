@@ -57,7 +57,7 @@ const Register_input = () => {
     setPassword('');
     setRepassword('');
 
-    navigate('/LandingPage');
+    navigate('/');
   };
 
   return (
