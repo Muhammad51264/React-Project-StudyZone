@@ -14,7 +14,9 @@ window.addEventListener("resize", ()=>{
   let nav=document.querySelector(".navbar_");
   let logo=document.querySelector(".navbar__logo");
   let navbarSearch =document.querySelector(".navbar__search")
-  if(window.innerWidth>1023 && (window.location.pathname !="/login") && (window.location.pathname != "/register")){
+  
+try{
+  if(window.innerWidth>1023 ){
 
     nav.style.flexDirection="row";
     navbarText.style.display = "flex"
@@ -32,7 +34,17 @@ window.addEventListener("resize", ()=>{
     // navbarIcons.style.display = "none"
     navbarSearch.style.display = "none"
   }
-})
+
+} catch(err){
+  console.log(err)
+}
+
+
+
+}
+
+
+)
 
 
 
