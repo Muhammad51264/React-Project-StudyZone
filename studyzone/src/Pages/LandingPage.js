@@ -170,7 +170,7 @@ function LandingPage() {
           <p className="what_sz_about">
             Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
             sollicitudin at nec nam et pharetra gravida. Adipiscing a quis
-            ultrices eu ornare tristique vel nisl orci.{" "}
+            ultrices eu ornare tristique vel nisl orci.
           </p>
         </div>
       </div>
