@@ -32,7 +32,7 @@ const Footer = () => {
                 id="btn_subscribe"
                 type="button"
               >
-                Subscribe{" "}
+                Subscribe
               </button>
             </p>
           </section>

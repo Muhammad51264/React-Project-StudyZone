@@ -861,10 +861,10 @@ padding:0 10px;
 /* Landing Page */
 
 /* Courses Page */
-.courses-jumbotron {
+/* .courses-jumbotron {
   width: 100%;
   height: 50vh;
-}
+}  */
 .courses--heading {
   display: flex;
   flex-wrap: wrap;
@@ -875,6 +875,11 @@ padding:0 10px;
 }
 .courses--filterbtn {
   margin-right: 35px;
+}
+.courses--filterbtn :hover{
+background-color: var(--white-font-color);
+color: var(--main-color);
+border: 1px solid var(--main-color);
 }
 
 .courses--filterbtn {
@@ -888,16 +893,12 @@ padding:0 10px;
 }
 .cards--container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 }
 .courses--recommended--background {
   background-color: var(--second-color);
 }
 
-/* .courses--recommended {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-} */
 .courses--recommended--heading {
   display: flex;
   justify-content: space-between;
@@ -908,18 +909,7 @@ padding:0 10px;
   font-weight: bolder;
   margin-top: 10px;
 }
-@media only screen and (max-width: 1200px) {
-  .cards--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 10px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .courses--page--card {
-    width: 200px;
-  }
-}
+
 
 /* Courses Page */
 
