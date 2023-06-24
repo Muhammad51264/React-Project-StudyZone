@@ -3,10 +3,10 @@ import NavButton from "./NavButton"
 import NavIcons from './navIcons';
 import NavSearch from './navSearch';
 import { Link } from 'react-router-dom';
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 const Nav = () => {
 let [burgerMenu,setBurgerMenu]=useState(true);
-
+let login = sessionStorage.getItem("login")
 window.addEventListener("resize", ()=>{
   let navbarText =document.querySelector(".navbar__text")
   let navbarButton =document.querySelector(".navbar__button")
@@ -96,15 +96,15 @@ try{
 
       <NavSearch/>
 
-    <NavButton/>
+    {/* <NavButton/> */}
+  {login==="true" ? <NavIcons/> : <NavButton/>}
 
 
 
 
 
 
-
-    {/* <NavIcons/> */}
+    
 
 
     </nav>

@@ -6,7 +6,7 @@ import { Link,  useNavigate } from 'react-router-dom';
 const Login_input = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+const [errorMessage,setErrorMessage]= useState("");
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -22,16 +22,28 @@ const Login_input = () => {
     const userData = JSON.parse(localStorage.getItem('userData'));
 
     // Check if username and password match the stored data
-    if (userData && userData.username === username && userData.password === password) {
-      // Valid login credentials
-      navigate('/');
-      // Redirect to the desired page
-      // Replace '/dashboard' with the path you want to redirect the user to after successful login
-      // history.push('/dashboard');
-    } else {
-      // Invalid login credentials
-      alert('Invalid username or password');
+    let found=false;
+    for(let i of userData){
+      
+      if (userData && i.email === username && i.password === password) {
+        found=true;}
+        // Valid login credentials
+        if (found) {
+          navigate('/');
+          sessionStorage.setItem("username", username);
+          sessionStorage.setItem("login", true);
+        }else {
+          // Invalid login credentials
+          // alert('Invalid username or password');
+          setErrorMessage("Invalid username or password.");
+        }
+
+        // Redirect to the desired page
+        // Replace '/dashboard' with the path you want to redirect the user to after successful login
+        // history.push('/dashboard');
+
     }
+
 
     // Clear the form fields
     setUsername('');
@@ -46,7 +58,7 @@ const Login_input = () => {
             <h1>Welcome Back!</h1>
           </div>
           <div className="input-groups">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Email</label>
             <input
               type="text"
               id="username"
@@ -77,7 +89,10 @@ const Login_input = () => {
             <div>
               <a href="#">Forgot password?</a>
             </div>
+
           </div>
+          <h6 className='error__message mt-3 text-danger'>{errorMessage}</h6>
+
           <div className="input-groups">
             <button className="btn-login" type="submit">
               Login
@@ -88,12 +103,7 @@ const Login_input = () => {
               Don't have an account? <Link to="/register">Sign up</Link>
             </p>
           </div>
-          <div className="input-groups checkbox signup-link text_with_line">
-            <h2>
-              <span>or continue with</span>
-            </h2>
-          </div>
-          <LoginIcons />
+
         </div>
         <div className="login_column_img"></div>
       </form>

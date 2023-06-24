@@ -134,7 +134,7 @@ body {
 }
 
 .nav_profile{
-  width: 30px;
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center ;
@@ -223,6 +223,10 @@ font-size: 20px;
 
 
 @media only screen and (max-width: 1023px) {
+  .nav_profile{
+    width: fit-content;
+  }
+
   .navbar_{
     padding: 10px 40px;
   }
@@ -316,7 +320,7 @@ font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  
 }
 
 .login-form {
@@ -358,9 +362,11 @@ padding: 0;
   height: auto;
 } */
 
+
+
 .input-groups_title{
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
     text-transform: uppercase;
 }
 

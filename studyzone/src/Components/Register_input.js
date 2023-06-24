@@ -2,12 +2,17 @@ import React, { useState } from 'react';
 import LoginIcons from './loginIcons';
 import { Link,  useNavigate } from 'react-router-dom';
 
+
+
+
+
+
 const Register_input = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [repassword, setRepassword] = useState('');
-
+const [errorMessage,setErrorMessage] = useState("");
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -25,39 +30,106 @@ const Register_input = () => {
   };
 
   const navigate = useNavigate();
+  var savedData = localStorage.getItem("userData");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!username || !email || !password || !repassword) {
-      alert('Please fill in all fields');
-      return;
+      // alert('Please fill in all fields');
+      setErrorMessage("Please fill in all fields.");
+    }else{
+      setErrorMessage("");
+      if (password !== repassword) {
+        // alert('Passwords do not match');
+        setErrorMessage("Passwords do not match.");
+      }else{
+        setErrorMessage("");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          // alert('Invalid email format');
+          setErrorMessage("Invalid email format.");
+        }else{
+          setErrorMessage("")
+          let similerEmails=false;
+          var users;
+          if (savedData!=null)
+          {users = JSON.parse(savedData);}
+          else{
+            users=[]
+          }
+          for (var i = 0; i < users.length; i++) {
+            if (users[i].email === email) {
+                similerEmails=true;
+            }
+          }
+          if (similerEmails) {
+            setErrorMessage("Email already taken.")
+          }else{
+            setErrorMessage("")
+
+            var parsedData = JSON.parse(savedData);
+  
+  let user = [];
+  let userData = {};
+  let lastUserID=0;
+  user.push.apply(user, parsedData);
+
+if(user.length>0){
+  const lastObject = user[user.length - 1];
+   lastUserID = lastObject.userId;
+}
+
+  let userId=lastUserID+1;
+  userData.email = email;
+  userData.username = username;
+  userData.password = password;
+  userData.userId = userId;
+
+
+  user.push(userData);
+  localStorage.setItem("userData", JSON.stringify(user));
+
+
+  setUsername('');
+  setEmail('');
+  setPassword('');
+  setRepassword('');
+
+  navigate('/');
+  sessionStorage.setItem("username", userData.username);
+  sessionStorage.setItem("login", true);
+
+          }
+        }
+      }
+      
     }
 
-    if (password !== repassword) {
-      alert('Passwords do not match');
-      return;
-    }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert('Invalid email format');
-      return;
-    }
 
-    const userData = {
-      username,
-      email,
-      password
-    };
-    localStorage.setItem('userData', JSON.stringify(userData));
 
-    setUsername('');
-    setEmail('');
-    setPassword('');
-    setRepassword('');
 
-    navigate('/');
+    
+
+   
+
+    
+
+
+
+
+    // const userData = {
+    //   username,
+    //   email,
+    //   password
+    // };
+    // localStorage.setItem('userData', JSON.stringify(userData));
+
+
+
+  
+
   };
 
   return (
@@ -118,9 +190,10 @@ const Register_input = () => {
               onChange={handleRepasswordChange}
             />
           </div>
+          <h6 className='error__message mt-3 text-danger'>{errorMessage}</h6>
 
           <div className="input-groups">
-            <button className="btn-login" type="submit">
+            <button className="btn-login m-auto" type="submit">
               Sign up
             </button>
           </div>
@@ -129,12 +202,8 @@ const Register_input = () => {
               Already have an account? <Link to="/login">Sign In</Link>
             </p>
           </div>
-          <div className="input-groups checkbox signup-link text_with_line">
-            <h2>
-              <span>or continue with</span>
-            </h2>
-          </div>
-          <LoginIcons />
+ 
+
         </div>
         <div className="registration_column_img"></div>
       </form>
