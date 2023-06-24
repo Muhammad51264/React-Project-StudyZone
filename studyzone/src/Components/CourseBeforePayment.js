@@ -1,7 +1,8 @@
 import React from 'react'
 import Rating from '@mui/material/Rating';
-
+import { useNavigate } from 'react-router';
 const CourseBeforePayment = ({course}) => {
+  let navigate=useNavigate()
   return (
 <>
 <div className='course__details__background'>
@@ -109,8 +110,15 @@ const CourseBeforePayment = ({course}) => {
       <h3 className="course__name text-dark mt-1">{course.courseName}</h3>
       <div className="course__desc">{course.description}</div>
       <h2 className="price text-black fw-bold my-3 ms-1">${course.price}</h2>
-      <button className='buy__button btn btn-info' onClick={()=>{localStorage.setItem("coursePayed",true)
-     window.location.reload();}}>Buy Now</button>
+      <button className='buy__button btn btn-info' onClick={()=>{
+        console.log(sessionStorage.getItem("login") ==="true" )
+        if(sessionStorage.getItem("login") ==="true" ) {
+          sessionStorage.setItem("coursePayed",true)
+     window.location.reload();
+        }else{
+          navigate('/login')
+        }
+        }}>Buy Now</button>
       <hr />
       <div className="course__payment__info d-flex flex-column gap-3">
         <h5 className='text-dark fw-bold'>This Course includes :</h5>

@@ -11,15 +11,15 @@ const CourseDetails = () => {
     console.log(course);
 
 
-  if (localStorage.getItem("coursePayed") === null) {
-    localStorage.setItem("coursePayed", "false");
+  if (sessionStorage.getItem("coursePayed") === null) {
+    sessionStorage.setItem("coursePayed", "false");
   }
 
   return (
     <>
 
-    {localStorage.getItem("coursePayed") === 'true'&& <CourseAfterPayment course={course}/>}
-    {localStorage.getItem("coursePayed") === 'false'&& <CourseBeforePayment course={course}/>}
+    {sessionStorage.getItem("coursePayed") === 'true'&& <CourseAfterPayment course={course}/>}
+    {sessionStorage.getItem("coursePayed") === 'false'&& <CourseBeforePayment course={course}/>}
 
         <div className="m-auto card__slider__recommended pt-2">
           <div className='recommended__text d-flex justify-content-between m-auto mt-3' style={{width:"90%"}}>
