@@ -13,9 +13,9 @@ window.addEventListener("resize", ()=>{
   // let navbarIcons =document.querySelector(".navbar_icons")
   let nav=document.querySelector(".navbar_");
   let logo=document.querySelector(".navbar__logo");
-
   let navbarSearch =document.querySelector(".navbar__search")
-  if(window.innerWidth>1023){
+  if(window.innerWidth>1023 && (window.location.pathname !="/login") && (window.location.pathname != "/register")){
+
     nav.style.flexDirection="row";
     navbarText.style.display = "flex"
     navbarButton.style.display = "flex"
@@ -46,6 +46,7 @@ window.addEventListener("resize", ()=>{
 <div className="burgerMenu__container" style={{width:"30px"}} onClick={()=>{setBurgerMenu(!burgerMenu)
     let navbarText =document.querySelector(".navbar__text")
     let navbarButton =document.querySelector(".navbar__button")
+
     // let navbarIcons =document.querySelector(".navbar_icons")
     let navbarSearch =document.querySelector(".navbar__search")
     if (burgerMenu === true){
